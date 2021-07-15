@@ -35,7 +35,7 @@ CREATE TABLE `admin` (
 -- -------------------------------------
 -- Records for table administrator
 -- -------------------------------------
-INSERT INTO `admin` VALUE(1,'admin' ,'admin');
+INSERT INTO `admin` VALUE(1, 'admin', 'admin');
 
 
 -- -------------------------------------
@@ -78,7 +78,6 @@ CREATE TABLE `student` (
 -- -------------------------------------
 INSERT INTO `student` VALUE(1, 'stu01', 'stu01', 89);
 INSERT INTO `student` VALUE(2, 'stu02', 'stu02', 89);
-
 
 
 
