@@ -2,11 +2,29 @@ package com.cn.online_exam.pojo;
 
 import java.io.Serializable;
 
+/**
+ * 管理员类.
+ */
 public class Administrator implements Serializable {
+    /**
+     * adminID.
+     */
     private Integer adminID;
+    /**
+     * account.
+     */
     private String account;
+    /**
+     * password.
+     */
     private String password;
 
+    /**
+     * Constructor.
+     * @param adminID   adminID.
+     * @param account   account.
+     * @param password  password.
+     */
     public Administrator(Integer adminID, String account, String password) {
         this.adminID = adminID;
         this.account = account;
