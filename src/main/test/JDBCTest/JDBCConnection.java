@@ -27,9 +27,5 @@ public class JDBCConnection {
     public static void main(String[] args) {
         Connection connection = getConnFromC3p0();
         System.out.println(connection == null);
-
-        AdminServiceImpl adminService =  new AdminServiceImpl();
-        List<Administrator> administratorList=adminService.findALL();
-        System.out.println(administratorList == null);
     }
 }
