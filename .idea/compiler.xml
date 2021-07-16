@@ -9,5 +9,8 @@
         <module name="onlineExam" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="onlineExam" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
