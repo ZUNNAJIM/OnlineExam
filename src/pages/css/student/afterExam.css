@@ -1,0 +1,71 @@
+a {
+  text-decoration: none;
+}
+
+.top {
+  padding: 25px;
+  text-align: center;
+  background-color: rgb(198, 236, 181);
+}
+
+.top span {
+  display: inline-block;
+  margin: 5px auto;
+  text-align: center;
+  font-size: 50px;
+  color: #999;
+}
+
+img {
+  width: 200px;
+  margin-top: 30px;
+  margin-right: 50px;
+}
+
+button {
+  width: 120px;
+  height: 40px;
+  background-color: rgb(138, 176, 248);
+  font-size: 20px;
+  font-weight: 700;
+  border: 0;
+  border-radius: 10px;
+}
+
+button a {
+  color: aliceblue;
+}
+
+.line {
+  background-color: #ccc;
+  height: 5px;
+}
+
+.description {
+  margin: 100px 400px 30px;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.description span {
+  color: rgb(44, 121, 221);
+  font-weight: 700;
+}
+
+.main {
+  margin: 50px auto;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #666;
+}
+
+.finish {
+  margin-top: 40px;
+  margin-left: 30%;
+}
+
+.back {
+  margin-top: 40px;
+  margin-left: 20%;
+}
