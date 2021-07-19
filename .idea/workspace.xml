@@ -10,28 +10,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="efeffbea-7802-427c-9a6a-e7680b192b00" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/onlineExam_war.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/onlineExam_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/onlineExam_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8a8fbd3e-fd1a-4785-b26f-7c1174a6e15b.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8a8fbd3e-fd1a-4785-b26f-7c1174a6e15b/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8a8fbd3e-fd1a-4785-b26f-7c1174a6e15b/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8a8fbd3e-fd1a-4785-b26f-7c1174a6e15b/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8a8fbd3e-fd1a-4785-b26f-7c1174a6e15b/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onlineExam.iml" beforeDir="false" afterPath="$PROJECT_DIR$/onlineExam.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/网上考试系统需求分析3.0.docx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/网上考试系统需求分析3.0.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online_exam.sql" beforeDir="false" afterPath="$PROJECT_DIR$/online_exam.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/WEB-INF/classes/com/cn/online_exam/dao/adminDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/WEB-INF/classes/com/cn/online_exam/dao/adminDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/WEB-INF/classes/com/cn/online_exam/service/impl/AdminServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/WEB-INF/classes/com/cn/online_exam/service/impl/AdminServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cn/online_exam/dao/adminDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cn/online_exam/dao/adminDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cn/online_exam/service/impl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cn/online_exam/service/impl/AdminServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/test/JDBCTest/JDBCConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/JDBCTest/JDBCConnection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cn/online_exam/dao/adminDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cn/online_exam/dao/adminDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/cn/online_exam/service/impl/AdminServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cn/online_exam/service/impl/AdminServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/onlineExam.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/onlineExam.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/onlineExam/WEB-INF/classes/applicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/onlineExam/WEB-INF/classes/com/cn/online_exam/pojo/Administrator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/onlineExam/WEB-INF/classes/com/cn/online_exam/pojo/ExamResult.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/onlineExam/WEB-INF/classes/com/cn/online_exam/pojo/Paper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/onlineExam/WEB-INF/classes/com/cn/online_exam/pojo/Question.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/onlineExam/WEB-INF/classes/com/cn/online_exam/pojo/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/onlineExam/WEB-INF/classes/com/cn/online_exam/pojo/Teacher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/onlineExam/WEB-INF/classes/com/cn/online_exam/service/impl/AdminServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/onlineExam/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/onlineExam/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/JDBCTest/JDBCConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/JDBCTest/JDBCConnection.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,9 +37,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
-        <option value="Interface" />
         <option value="Jsp File" />
         <option value="spring-beans.schema" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -95,7 +90,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/libs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.23950617" />
@@ -104,8 +99,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\IDEA Projects\onlineExam\src\main\webapp\WEB-INF\libs" />
       <recent name="D:\IDEA Projects\onlineExam\src\main\webapp\WEB-INF" />
+      <recent name="D:\IDEA Projects\onlineExam\src\main\webapp\WEB-INF\libs" />
       <recent name="D:\IDEA Projects\onlineExam\docs" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -154,8 +149,8 @@
       </method>
     </configuration>
     <configuration name="Tomcat 8.5.60" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.60" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="$PROJECT_DIR$/../../java jdk 1.8_winx64" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/onlineExam_war_exploded/" />
-      <option name="UPDATING_POLICY" value="restart-server" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
         <artifact name="onlineExam:war exploded">
           <settings>
@@ -288,8 +283,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.JDBCConnection" />
         <item itemvalue="JUnit.TestFindAll.findAll" />
+        <item itemvalue="Application.JDBCConnection" />
         <item itemvalue="Tomcat Server.index.jsp" />
       </list>
     </recent_temporary>
@@ -309,6 +304,11 @@
       <workItem from="1626399166773" duration="414000" />
       <workItem from="1626415240349" duration="2858000" />
       <workItem from="1626420415334" duration="3304000" />
+      <workItem from="1626424687788" duration="652000" />
+      <workItem from="1626483758753" duration="3513000" />
+      <workItem from="1626508562133" duration="4542000" />
+      <workItem from="1626517436793" duration="2790000" />
+      <workItem from="1626659379181" duration="2261000" />
     </task>
     <servers />
   </component>
