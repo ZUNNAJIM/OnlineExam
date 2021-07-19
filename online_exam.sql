@@ -55,7 +55,7 @@ CREATE TABLE `teacher`
     `name` VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
     `gender` int(10) NOT NULL ,
     `mail`      VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-    `paperID`   int(11) DEFAULT -1                                     NOT NULL,
+    `exam_name`   varchar(50) NOT NULL,
     PRIMARY KEY (`teacherID`),
     UNIQUE (`account`)
 ) ENGINE = InnoDB
@@ -66,8 +66,8 @@ CREATE TABLE `teacher`
 -- -------------------------------------
 -- Records for table teacher
 -- -------------------------------------
-INSERT INTO `teacher` VALUE (1, 'teach01', 'teach01', 'zunnajim', 1, '12345@qq.com', 001);
-INSERT INTO `teacher` VALUE (2, 'teach02', 'teach02', '罗盛丽', 2, '12345@qq.com', 002);
+INSERT INTO `teacher` VALUE (1, 'teach01', 'teach01', 'zunnajim', 1, '12345@qq.com', 'JAVA-developing');
+INSERT INTO `teacher` VALUE (2, 'teach02', 'teach02', '罗盛丽', 2, '12345@qq.com', 'C++-developing');
 
 
 
@@ -142,19 +142,18 @@ CREATE TABLE `question`
     `analysis`   longtext CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
     `point`      longtext CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
     `difficulty` varchar(50)                                         NOT NULL,
-    `paperID`    int(11)                                             NOT NULL,
-    PRIMARY KEY (`ID`),
-    CONSTRAINT FOREIGN KEY (`paperID`) REFERENCES `paper` (`paperID`) ON DELETE CASCADE ON UPDATE CASCADE
+    `exam_name`    varchar(50) NOT NULL ,
+    PRIMARY KEY (`ID`) ,
+    CONSTRAINT FOREIGN KEY (`exam_name`) REFERENCES `paper` (`exam_name`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE = InnoDB
   CHARACTER SET = latin1
-  COLLATE = latin1_swedish_ci
-  ROW_FORMAT = Dynamic;
+  COLLATE = latin1_swedish_ci;
 
 -- -------------------------------------
 -- Records for table question
 -- -------------------------------------
-INSERT INTO `question` VALUE (1, 1, 'JAVA所定义的版本中不包括：', 'D', 'A、JAVA2 EE', 'B、 JAVA2 Card', 'C、 JAVA2 ME', 'D、JAVA2 HE', '无', 'java基础知识', 'easy', 1);
-INSERT INTO `question` VALUE (2, 1, 'C++基本数据类型不包括：', 'B', 'A、int', 'B、struct', 'C、double', 'D、char', 'C++基本数据类型', '略', 'easy', 2);
+INSERT INTO `question` VALUE (1, 1, 'JAVA所定义的版本中不包括：', 'D', 'A、JAVA2 EE', 'B、 JAVA2 Card', 'C、 JAVA2 ME', 'D、JAVA2 HE', '无', 'java基础知识', 'easy', 'JAVA-developing');
+INSERT INTO `question` VALUE (2, 1, 'C++基本数据类型不包括：', 'B', 'A、int', 'B、struct', 'C、double', 'D、char', 'C++基本数据类型', '略', 'easy', 'C++-developing');
 
 
 
@@ -167,17 +166,21 @@ CREATE TABLE `paper`
 (
     `paperID` int(11)     NOT NULL,
     `major`   varchar(20) NOT NULL,
-    PRIMARY KEY (`paperID`)
+    `exam_name` varchar(50) NOT NULL ,
+    `start_date` datetime NOT NULL ,
+    `end_date` datetime NOT NULL ,
+    `exam_time` int(11) NOT NULL DEFAULT 60,
+    PRIMARY KEY (`paperID`) ,
+    UNIQUE (`exam_name`)
 ) ENGINE = InnoDB
   CHARACTER SET = latin1
-  COLLATE = latin1_swedish_ci
-  ROW_FORMAT = Dynamic;
+  COLLATE = latin1_swedish_ci;
 
 -- -------------------------------------
 -- Records structure for paper
 -- -------------------------------------
-INSERT INTO `paper` VALUE (1, 'JAVA');
-INSERT INTO `paper` VALUE (2, 'C++');
+INSERT INTO `paper` VALUE (1, 'JAVA', 'JAVA-developing', '2021-07-16 10:00:00', '2021-07-16 12:00:00', 120);
+INSERT INTO `paper` VALUE (2, 'C++', 'C++-developing', '2021-07-16 14:00:00', '2021-07-16 16:00:00', 120);
 
     
 SET FOREIGN_KEY_CHECKS = 1;

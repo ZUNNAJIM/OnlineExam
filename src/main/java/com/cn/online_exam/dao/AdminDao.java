@@ -21,6 +21,9 @@ public interface AdminDao {
     @Select("select * from admin")
     public List<Administrator> findAllAdmin();
 
+    @Select("select * from teacher")
+    public List<Teacher> findAllTeacher();
+
 
 
     /**

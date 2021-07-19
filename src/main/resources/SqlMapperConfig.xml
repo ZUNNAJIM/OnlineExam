@@ -8,6 +8,7 @@
         <package name="com.cn.online_exam"/>
     </typeAliases>
 
+
     <environments default="mysql">
         <environment id="mysql">
             <transactionManager type="JDBC"/>
