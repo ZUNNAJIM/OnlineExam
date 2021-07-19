@@ -6,6 +6,7 @@ public class Question implements Serializable {
 
     private Integer ID;
     private Integer questionID;
+    private String question;
     private String answer;
     private String option_a;
     private String option_b;
@@ -17,11 +18,12 @@ public class Question implements Serializable {
     private Integer paperID;
 
     public Question(Integer ID, Integer questionID,
-                    String answer, String option_a, String option_b,
+                    String question, String answer, String option_a, String option_b,
                     String option_c, String option_d, String analysis,
                     String point, String difficulty, Integer paperID) {
         this.ID = ID;
         this.questionID = questionID;
+        this.question = question;
         this.answer = answer;
         this.option_a = option_a;
         this.option_b = option_b;
@@ -47,6 +49,14 @@ public class Question implements Serializable {
 
     public void setQuestionID(Integer questionID) {
         this.questionID = questionID;
+    }
+
+    public String getQuestion() {
+        return question;
+    }
+
+    public void setQuestion(String question) {
+        this.question = question;
     }
 
     public String getAnswer() {
@@ -126,6 +136,7 @@ public class Question implements Serializable {
         return "Question{" +
                 "ID=" + ID +
                 ", questionID=" + questionID +
+                ", question='" + question + '\'' +
                 ", answer='" + answer + '\'' +
                 ", option_a='" + option_a + '\'' +
                 ", option_b='" + option_b + '\'' +

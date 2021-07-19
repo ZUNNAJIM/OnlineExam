@@ -7,12 +7,33 @@ public class Student implements Serializable {
     private Integer studentID;
     private String account;
     private String password;
+    private String name;
+    private Integer gender;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Integer getGender() {
+        return gender;
+    }
+
+    public void setGender(Integer gender) {
+        this.gender = gender;
+    }
+
     private Integer grade;
 
-    public Student(Integer studentID, String account, String password, Integer grade) {
+    public Student(Integer studentID, String account, String password, String name, Integer gender, Integer grade) {
         this.studentID = studentID;
         this.account = account;
         this.password = password;
+        this.name = name;
+        this.gender = gender;
         this.grade = grade;
     }
 
@@ -54,6 +75,8 @@ public class Student implements Serializable {
                 "studentID=" + studentID +
                 ", account='" + account + '\'' +
                 ", password='" + password + '\'' +
+                ", name='" + name + '\'' +
+                ", gender=" + gender +
                 ", grade=" + grade +
                 '}';
     }

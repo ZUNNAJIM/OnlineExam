@@ -7,13 +7,33 @@ public class Teacher implements Serializable {
     private Integer teacherID;
     private String account;
     private String password;
+    private String name;
+    private Integer gender;
     private String mail;
     private Integer paperID;
 
-    public Teacher(Integer teacherID, String account, String password, String mail, Integer paperID) {
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Integer getGender() {
+        return gender;
+    }
+
+    public void setGender(Integer gender) {
+        this.gender = gender;
+    }
+
+    public Teacher(Integer teacherID, String account, String password, String name, Integer gender, String mail, Integer paperID) {
         this.teacherID = teacherID;
         this.account = account;
         this.password = password;
+        this.name = name;
+        this.gender = gender;
         this.mail = mail;
         this.paperID = paperID;
     }
@@ -65,6 +85,8 @@ public class Teacher implements Serializable {
                 "teacherID=" + teacherID +
                 ", account='" + account + '\'' +
                 ", password='" + password + '\'' +
+                ", name='" + name + '\'' +
+                ", gender=" + gender +
                 ", mail='" + mail + '\'' +
                 ", paperID=" + paperID +
                 '}';
