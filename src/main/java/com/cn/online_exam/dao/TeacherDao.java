@@ -13,7 +13,7 @@ import java.util.List;
 public interface TeacherDao {
 
     @Select("select * from teacher")
-    public List<Teacher> findAllTeacher();
+    public List<Teacher> findAllTeacher(List<Long> longList);
 
     @Update("update teacher set teacherID=#{teacherID},account=#{account},password=#{password},name=#{name}," +
             "gender=#{gender},mail=#{mail},paperID=#{paperID} where account=#{account)")
