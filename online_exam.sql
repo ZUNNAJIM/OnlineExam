@@ -55,7 +55,7 @@ CREATE TABLE `teacher`
     `name` VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
     `gender` int(10) NOT NULL ,
     `mail`      VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-    `paperID`   int(11)                                                NOT NULL,
+    `paperID`   int(11) DEFAULT -1                                     NOT NULL,
     PRIMARY KEY (`teacherID`),
     UNIQUE (`account`)
 ) ENGINE = InnoDB
@@ -82,6 +82,7 @@ CREATE TABLE `student`
     `password`  VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
     `name` VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
     `gender` int(10) NOT NULL ,
+    `major` varchar(20) NOT NULL ,
     `grade`     int(10)                                                 NOT NULL DEFAULT 0,
     PRIMARY KEY (`studentID`),
     UNIQUE (`account`)
@@ -93,8 +94,8 @@ CREATE TABLE `student`
 -- -------------------------------------
 -- Records for table student
 -- -------------------------------------
-INSERT INTO `student` VALUE (1, 'stu01', 'stu01', '张三', 1, 89);
-INSERT INTO `student` VALUE (2, 'stu02', 'stu02', '小丽', 2, 99);
+INSERT INTO `student` VALUE (1, 'stu01', 'stu01', '张三', 1, 'java', 89);
+INSERT INTO `student` VALUE (2, 'stu02', 'stu02', '小丽', 2,'C++', 99);
 
 
 
@@ -152,10 +153,8 @@ CREATE TABLE `question`
 -- -------------------------------------
 -- Records for table question
 -- -------------------------------------
-INSERT INTO `question` VALUE (1, 1, 'JAVA所定义的版本中不包括：', 'D', 'A、JAVA2 EE', 'B、 JAVA2 Card', 'C、 JAVA2 ME',
-    'D、JAVA2 HE', '无', 'easy', 1);
-INSERT INTO `question` VALUE (2, 1, 'C++基本数据类型不包括：', 'B', 'A、int', 'B、struct', 'C、double', 'D、char',
-    'C++基本数据类型', 'easy', 2);
+INSERT INTO `question` VALUE (1, 1, 'JAVA所定义的版本中不包括：', 'D', 'A、JAVA2 EE', 'B、 JAVA2 Card', 'C、 JAVA2 ME', 'D、JAVA2 HE', '无', 'java基础知识', 'easy', 1);
+INSERT INTO `question` VALUE (2, 1, 'C++基本数据类型不包括：', 'B', 'A、int', 'B、struct', 'C、double', 'D、char', 'C++基本数据类型', '略', 'easy', 2);
 
 
 
@@ -179,3 +178,6 @@ CREATE TABLE `paper`
 -- -------------------------------------
 INSERT INTO `paper` VALUE (1, 'JAVA');
 INSERT INTO `paper` VALUE (2, 'C++');
+
+    
+SET FOREIGN_KEY_CHECKS = 1;

@@ -11,9 +11,19 @@
   <component name="ChangeListManager">
     <list default="true" id="efeffbea-7802-427c-9a6a-e7680b192b00" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cn/online_exam/pojo/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cn/online_exam/pojo/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/网上考试系统需求分析3.0.docx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/网上考试系统需求分析3.0.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online_exam.sql" beforeDir="false" afterPath="$PROJECT_DIR$/online_exam.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/WEB-INF/classes/SqlMapperConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/WEB-INF/classes/SqlMapperConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cn/online_exam/dao/adminDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cn/online_exam/dao/AdminDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cn/online_exam/pojo/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cn/online_exam/pojo/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cn/online_exam/pojo/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cn/online_exam/pojo/Teacher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cn/online_exam/service/impl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cn/online_exam/service/impl/AdminServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cn/online_exam/service/impl/LoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cn/online_exam/service/impl/LoginServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/SqlMapperConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SqlMapperConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/test/JDBCTest/JDBCConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/JDBCTest/JDBCConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/test/JDBCTest/TestFindAll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/JDBCTest/TestFindAll.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cn/online_exam/dao/adminDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cn/online_exam/dao/adminDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cn/online_exam/service/impl/AdminServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cn/online_exam/service/impl/AdminServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cn/online_exam/service/impl/LoginServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cn/online_exam/service/impl/LoginServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +36,8 @@
         <option value="package-info" />
         <option value="Jsp File" />
         <option value="spring-beans.schema" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -94,7 +104,7 @@
       <recent name="com.cn.online_exam.dao" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.60">
+  <component name="RunManager" selected="JUnit.TestFindAll.TestExamResult">
     <configuration name="JDBCConnection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="JDBCTest.JDBCConnection" />
       <module name="onlineExam" />
@@ -115,6 +125,22 @@
         </value>
       </option>
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestFindAll.TestExamResult" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="onlineExam" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JDBCTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="JDBCTest" />
+      <option name="MAIN_CLASS_NAME" value="JDBCTest.TestFindAll" />
+      <option name="METHOD_NAME" value="TestExamResult" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -225,9 +251,11 @@
       <item itemvalue="Application.JDBCConnection" />
       <item itemvalue="JUnit.TestFindAll.findAll" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.60" />
+      <item itemvalue="JUnit.TestFindAll.TestExamResult" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestFindAll.TestExamResult" />
         <item itemvalue="JUnit.TestFindAll.findAll" />
         <item itemvalue="Application.JDBCConnection" />
       </list>
@@ -252,7 +280,7 @@
       <workItem from="1626483758753" duration="3513000" />
       <workItem from="1626508562133" duration="4542000" />
       <workItem from="1626517436793" duration="2790000" />
-      <workItem from="1626659379181" duration="6004000" />
+      <workItem from="1626659379181" duration="13911000" />
     </task>
     <servers />
   </component>
