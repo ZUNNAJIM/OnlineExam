@@ -11,10 +11,10 @@ import java.util.List;
 public class AdminServiceImpl implements AdminService {
 
     @Autowired
-    private com.cn.online_exam.dao.adminDao adminDao;
+    private com.cn.online_exam.dao.AdminDao adminDao;
 
     @Override
     public List<Administrator> findALL() {
-        return adminDao.findAll();
+        return adminDao.findAllAdmin();
     }
 }

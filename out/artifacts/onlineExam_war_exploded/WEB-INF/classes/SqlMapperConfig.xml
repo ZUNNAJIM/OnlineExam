@@ -21,7 +21,7 @@
     </environments>
 
     <mappers>
-        <mapper class="com.cn.online_exam.dao.adminDao"/>
+        <mapper class="com.cn.online_exam.dao.AdminDao"/>
 <!--        <package name="com.cn.online_exam.dao"/>-->
     </mappers>
 </configuration>

@@ -1,7 +1,10 @@
 package JDBCTest;
 
-import com.cn.online_exam.dao.adminDao;
+import com.cn.online_exam.dao.*;
 import com.cn.online_exam.pojo.Administrator;
+import com.cn.online_exam.pojo.ExamResult;
+import com.cn.online_exam.pojo.Paper;
+import com.cn.online_exam.pojo.Question;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -20,7 +23,8 @@ public class TestFindAll {
     private SqlSessionFactoryBuilder builder;
     private SqlSessionFactory factory;
     private SqlSession session;
-    private adminDao adminDao;
+    private AdminDao adminDao;
+    private ExamResultDao examResultDao;
 
     @Before
     public void Init() throws IOException {
@@ -32,15 +36,26 @@ public class TestFindAll {
         //4.使用 SqlSessionFactory 生产 SqlSession 对象
         session = factory.openSession(true);//true自动提交事务
         //5.使用 SqlSession 创建 dao 接口的代理对象
-        adminDao = session.getMapper(adminDao.class);
+        adminDao = session.getMapper(AdminDao.class);
+        examResultDao = session.getMapper(ExamResultDao.class);
     }
 
     @Test
     public void findAll()
     {
-        List<Administrator> administratorList = adminDao.findAll();
+        List<Administrator> administratorList = adminDao.findAllAdmin();
         for (Administrator administrator : administratorList)
             System.out.println(administrator.toString());
+    }
+
+    @Test
+    public void TestExamResult()
+    {
+        List<ExamResult> examResults=examResultDao.findAllResult();
+        for (ExamResult examResult:examResults) {
+            System.out.println(examResult.toString());
+        }
+
     }
 
     @After
