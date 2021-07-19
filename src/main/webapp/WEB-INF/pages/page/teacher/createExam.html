@@ -1,0 +1,129 @@
+<!-- 教师主页 -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Rookies在线考试系统</title>
+		<!-- 处理默认样式 -->
+		<link rel="stylesheet" href="../../css/reset.css" />
+		<!-- 教师主页css样式 -->
+		<link rel="stylesheet" href="../../css/teacher/creatExam.css" />
+		<!-- 引入网页标题图标 -->
+		<link rel="shortcut icon" href="../../OES_favicon%20.icoco" type="image/x-icon">
+		<!-- 引入iconfont图标 -->
+		<link rel="stylesheet" href="../../css/iconfont/iconfont.css">
+	</head>
+
+
+	<body>
+		<!-- 页面头部 -->
+		<div id="header1">
+			<span class="iconfont icon-zhuce">注册</span>
+			<span class="iconfont icon-yonghu">登录</span>
+		</div>
+		<div id="header2">
+			<span>退出登录</span>
+		</div>
+
+		<!-- 侧边栏 -->
+		<div id="sidebar">
+			<img src="../../img/image/logo.png" alt="logo"/>
+			<ul>
+				<li>
+					<h1><span class="iconfont icon-ziyuan143"></span>考试管理</h1>
+				</li>
+				<li>创建考试</li>
+				<li>题库管理</li>
+				<li>考试列表</li>
+				<li>
+					<h1><span class="iconfont icon-shuju"></span>数据统计</h1>
+				</li>
+				<li>考试记录</li>
+				<li>考生信息</li>
+				<li>
+					<h1><span class="iconfont icon-yonghu"></span>个人中心</h1>
+				</li>
+				<li>信息管理</li>
+			</ul>
+		</div>
+
+		<!-- 版心 -->
+		<div id="container">
+			<!-- 创建考试 -->
+			<div class="create-exam">
+				<!-- 试卷设置 -->
+				<div class="test-paper">
+				<ul>
+					<li class="iconfont icon-guizeshuoming active">试卷设置</li>
+					<li class="iconfont icon-kaoshi">题目设置</li>
+				</ul>
+					<form method="post">
+						<div>
+							<label class="iconfont icon-title-bar">考试标题：</label>
+							<input type="text" placeholder="请输入考试标题" />
+						</div>
+						<div>
+							<label class="iconfont icon-xuexiao_kemu">考试科目：</label>
+							<input type="text" placeholder="请输入考试科目" />
+						</div>
+						<div>
+							<label class="iconfont icon-riqi">考试日期：</label>
+							<input type="date" />
+							<label style="text-align: center;margin: 0 -10px;">————</label>
+							<input type="date" />
+						</div>
+						<div>
+							<label class="iconfont icon-leijicishu">考试次数：</label>
+							<label>每个账号考</label>
+							<input type="text" value="1" />
+							<label>次</label>
+						</div>
+						<div>
+							<label class="iconfont icon-naozhong_huaban1">考试时间：</label>
+							<input style="width: 50px;" type="text" value="60" />
+							<label>分钟</label>
+						</div>
+						<div>
+							<label class="iconfont icon-guizeshuoming">考试说明：</label><br />
+							<textarea rows="10" cols="120" style="resize: none;"></textarea><br />
+							<input type="button" value="保存并进入下一步" />
+						</div>
+					</form>
+				</div>
+
+				<!-- 题目设置 -->
+				<div class="topical">
+					<div class="left-bar">
+						<!-- 左侧题目类型选择栏 -->
+						<p class="iconfont icon-kaoshitiliang">选择添加以下题型</p>
+						<ul>
+							<li class="iconfont icon-icon-">单选题</li>
+							<li class="iconfon icon-w_duoxuanti">多选题</li>
+							<li class="iconfont icon-panduanti">判断题</li>
+						</ul>
+						<!-- 左侧题目快速定位栏 -->
+						<div class="guide">
+							<p class="iconfon icon-zhuce">快速导航</p>
+							<span>1</span>
+						</div>
+					</div>
+					<!-- 试卷浏览部分 -->
+					<div class="shiti">
+						<p>请在左侧选择所要添加的题目类型</p>
+					</div>
+					<!-- 右侧试题概况 -->
+					<div class="right-bar">
+						<p class="iconfon icon-gaikuang">试题概况</p>
+						<ul>
+							<li>题目总数：<span>0</span>题</li>
+							<li>题目总分：<span>0</span>分</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="footer"></div>
+	</body>
+</html>
