@@ -20,18 +20,6 @@ public class LoginController {
     @RequestMapping("/login")
     public void login(HttpServletRequest request, HttpServletResponse response)
     {
-        System.out.println("This is in loginService/login");
-        String account = request.getParameter("userName");
-        String password = request.getParameter("userPwd");
-        System.out.println(account);
-        System.out.println(password);
-        String identity = request.getParameter("identity");
-        System.out.println(identity);
-//        System.out.println(identity.length);
-        try {
-            request.getRequestDispatcher(loginService.login(account,password,identity)).forward(request,response);
-        } catch (IOException | ServletException e) {
-            e.printStackTrace();
-        }
+        String userName = request.getParameter("name");
     }
 }
