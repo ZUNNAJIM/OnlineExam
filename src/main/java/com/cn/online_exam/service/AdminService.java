@@ -8,5 +8,6 @@ import java.util.List;
 public interface AdminService {
 
     public List<Administrator> findALL();
-    List<Teacher> findAllTeacher(List<Long> longList);
+
+    List<Teacher> findAllTeacher();
 }
