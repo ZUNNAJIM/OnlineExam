@@ -13,7 +13,7 @@
     <link rel="shortcut icon" href="./statics/OES_favicon%20.ico" type="image/x-icon">
 </head>
 <body>
-<form action="/LoginService/login" method="post" id="loginForm">
+<form action="${pageContext.request.contextPath}/LogService/login" method="post" id="loginForm">
     <legend>账号登录</legend>
     <p id="radio">
         <input type="radio" name="identity" value="admin" /><label>管理员</label>

@@ -57,12 +57,12 @@
 </script>
 <!-- 页面头部 -->
 <div id="header">
-  <span>退出登录</span>
+  <span><a href="/LogService/logout">退出登录</a> </span>
 </div>
 
 <!-- 侧边栏 -->
 <div id="sidebar">
-  <img src="../../img/image/logo.png" />
+  <img src="../statics/img/image/logo.png" />
   <ul>
     <li>
       <h1><span class="iconfont icon-ziyuan143"></span>考试管理</h1>
@@ -92,24 +92,24 @@
     </ul>
     <!-- 试卷设置 -->
     <div id="test-paper">
-      <form method="post">
+      <form action="/PaperService/addPaper" method="post">
         <div>
           <label class="iconfont icon-title-bar">考试标题：</label>
-          <input type="text" placeholder="请输入考试标题" />
+          <input type="text" name="exam_name" placeholder="请输入考试标题" />
         </div>
         <div>
           <label class="iconfont icon-xuexiao_kemu">考试科目：</label>
-          <input type="text" placeholder="请输入考试科目" />
+          <input type="text" name="major" placeholder="请输入考试科目" />
         </div>
         <div>
           <label class="iconfont icon-riqi">考试日期：</label>
-          <input type="date" />
+          <input name="start_time" type="date" />
           <label style="text-align: center;margin: 0 -10px;">————</label>
-          <input type="date" />
+          <input name="end_time" type="date" />
         </div>
         <div>
           <label class="iconfont icon-naozhong_huaban1">考试时间：</label>
-          <input style="width: 50px;" type="text" value="60" />
+          <input style="width: 50px;" name="exam_time" type="text" value="60" />
           <label>分钟</label>
         </div>
         <div>
