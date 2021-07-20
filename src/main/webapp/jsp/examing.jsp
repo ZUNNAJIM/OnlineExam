@@ -7,7 +7,6 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
 <!-- 学生考试界面 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -22,7 +21,7 @@
     <!-- css样式 -->
     <link rel="stylesheet" href="../statics/css/student/examing.css" />
     <!-- 引入网页标题图标 -->
-    <link rel="shortcut icon" href="../statics/OES_favicon%20.icoco" type="image/x-icon">
+    <link rel="shortcut icon" href="../statics/OES_favicon%20.ico" type="image/x-icon">
     <!-- 引入iconfont图标 -->
     <link rel="stylesheet" href="../statics/css/iconfont/iconfont.css">
 </head>
@@ -40,7 +39,9 @@
     <div class="line"></div>
     <div class="sums">已完成  <span class="finished">20</span> / <span class="total"> 50</span></div>
     <div class="time">本次考试还剩 20：30</div>
-    <button class="finish"><a href="afterExam.html">提前交卷</a></button>
+    <button class="finish">
+        <a href="${pageContext.request.contextPath}/jsp/afterExam.jsp">提前交卷</a>
+    </button>
 </div>
 
 <form action="#" name="xxx">

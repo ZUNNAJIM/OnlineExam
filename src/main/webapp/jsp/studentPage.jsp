@@ -32,7 +32,7 @@
     <img src="../statics/img/image/logo.png" alt="logo">
     <span>学生主界面</span>
 </div>
-<button class="exit"><a href="${pageContext.request.contextPath}/LogService/logout">退出登录</a></button>
+<button class="exit"><a href="#">退出登录</a></button>
 
 <!-- 分割线 -->
 <div class="line"></div>

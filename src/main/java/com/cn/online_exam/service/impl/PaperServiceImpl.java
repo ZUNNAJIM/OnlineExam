@@ -6,9 +6,11 @@ import com.cn.online_exam.pojo.ExamResult;
 import com.cn.online_exam.pojo.Paper;
 import com.cn.online_exam.service.PaperService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service("PaperService")
 public class PaperServiceImpl implements PaperService {
     @Autowired
     private PaperDao paperDao;
