@@ -18,8 +18,16 @@ public class LoginController {
     private LoginService loginService;
 
     @RequestMapping("/login")
-    public void login(HttpServletRequest request, HttpServletResponse response)
+    public String  login(HttpServletRequest request, HttpServletResponse response)
     {
         String userName = request.getParameter("name");
+        String password = request.getParameter("password");
+        String identity = request.getParameter("identity");
+        String nextPage = loginService.login(userName, password, identity);
+        System.out.println(nextPage);
+//        request.setAttribute("name",userName);
+//        request.setAttribute("identity",identity);
+
+        return nextPage;
     }
 }

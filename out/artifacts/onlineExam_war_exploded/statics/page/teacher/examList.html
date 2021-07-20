@@ -1,3 +1,4 @@
+<!-- 考试列表 -->
 <!DOCTYPE html>
 <html>
 	<head>
@@ -5,12 +6,12 @@
 		<title>Rookies在线考试系统</title>
 		<!-- 处理默认样式 -->
 		<link rel="stylesheet" href="../../css/reset.css" />
-		<!-- 引入教师个人信息样式 -->
-		<link rel="stylesheet" href="../../css/teacher/teacherInformation.css" />
+		<!-- 考试列表css样式 -->
+		<link rel="stylesheet" href="../../css/teacher/examList.css" />
 		<!-- 引入公共样式 -->
 		<link rel="stylesheet" href="../../css/style.css" />
 		<!-- 引入网页标题图标 -->
-		<link rel="shortcut icon" href="../../OES_favicon .ico" type="image/x-icon">
+		<link rel="shortcut icon" href="../../../WEB-INF/OES_favicon%20.ico" type="image/x-icon">
 		<!-- 引入iconfont图标 -->
 		<link rel="stylesheet" href="../../css/iconfont/iconfont.css">
 	</head>
@@ -19,7 +20,7 @@
 		<div id="header">
 			<span>退出登录</span>
 		</div>
-
+		
 		<!-- 侧边栏 -->
 		<div id="sidebar">
 			<img src="../../img/image/logo.png" />
@@ -41,28 +42,20 @@
 				<li>信息管理</li>
 			</ul>
 		</div>
-
+		
 		<!-- 版心 -->
 		<div id="container">
-			<!-- 教师个人信息 -->
-			<div id="teacher-information">
-				<!-- 基础信息 -->
-				<p>|基础信息</p>
-				<ul class="basic">
-					<li>账号：<span>12345</span></li>
-					<li>工号：<span>12345</span></li>
-					<li>姓名：<span>12345</span></li>
-					<li>性别：<span>12345</span></li>
-					<li>邮箱：<span>12345</span></li>
-					<li>考试：<span>12345</span></li>
+			<div id="exam-list">
+				<ul class="list-head">
+					<li>考试名称</li>
+					<li>考试日期</li>
+					<li>操作</li>
 				</ul>
-				<!-- 修改密码 -->
-				<form class="update-pwd" method="post">
-					<input type="password" name="old-pwd" id="old-pwd" placeholder="输入当前密码" />
-					<input type="password" name="repeat-pwd" id="repeat-pwd" placeholder="重复当前密码" />
-					<input type="password" name="new-pwd" id="new-pwd" placeholder="输入新密码" />
-					<input type="submit" name="pwd-ack" id="pwd-ack" value="确认修改" />
-				</form>
+				<ul class="list-main">
+					<li>111</li>
+					<li>2020-07-20</li>
+					<li><input type="button" name="delete" id="list-delete" value="删除" /></li>
+				</ul>
 			</div>
 		</div>
 	</body>
