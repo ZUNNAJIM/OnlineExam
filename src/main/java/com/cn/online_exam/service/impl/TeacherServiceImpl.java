@@ -1,9 +1,8 @@
 package com.cn.online_exam.service.impl;
 
-import com.cn.online_exam.dao.PaperDao;
-import com.cn.online_exam.dao.StudentDao;
+import com.cn.online_exam.dao.QuestionDao;
 import com.cn.online_exam.dao.TeacherDao;
-import com.cn.online_exam.pojo.Paper;
+import com.cn.online_exam.pojo.Question;
 import com.cn.online_exam.pojo.Teacher;
 import com.cn.online_exam.service.TeacherService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,10 +12,12 @@ import java.util.List;
 public class TeacherServiceImpl implements TeacherService {
     @Autowired
     private TeacherDao teacherDao;
-    private PaperDao paperDao;
+    @Autowired
+    private QuestionDao questionDao;
+
     @Override
-    public List<Teacher> findAllStudent(List<Long> longList) {
-        return teacherDao.findAllTeacher(longList);
+    public List<Teacher> findAllStudent() {
+        return teacherDao.findAllStudent();
     }
 
     @Override
@@ -35,27 +36,23 @@ public class TeacherServiceImpl implements TeacherService {
     }
 
     @Override
-    public List<Paper> findAllPaper(List<Long> longList) {
-        return paperDao.findAllPaper(longList);
+    public List<Question> findAllQuestion() {
+        return questionDao.findAllQuestion();
     }
 
     @Override
-    public void updatePaper(Paper paper) {
-        paperDao.updatePaper(paper);
+    public void updateQuestion(Question question) {
+        questionDao.updateQuestion(question);
     }
 
     @Override
-    public Paper findByPaperID(Integer paperID) {
-        return paperDao.findByPaperID(paperID);
+    public void insertQuestion(Question question) {
+        questionDao.insertQuestion(question);
     }
 
     @Override
-    public void delPaper(Integer paperID) {
-        paperDao.delPaper(paperID);
+    public void delQuestion(Integer ID) {
+        questionDao.delQuestion(ID);
     }
 
-    @Override
-    public void insertPaper(Paper paper) {
-        paperDao.insertPaper(paper);
-    }
 }
