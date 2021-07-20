@@ -16,6 +16,9 @@ public interface QuestionDao {
     @Select("select * from question")
     public List<Question> findAllQuestion();
 
+    @Select("select * from paper where exam_name=#{exam_name}")
+    public List<Question> findExamQuestion(String exam_name);
+
     @Update("update question set ID=#{ID}, questionID=#{questionID}, question=#{question}, answer={#answer}, " +
     "option_a=#{option_a}，option_b=#{option_b}，option_c=#{option_c}，option_d=#{option_d}，analysis=#{analysis}, " +
     "point=#{point}, difficulty=#{difficulty}, exam_name=#{exam_name}")

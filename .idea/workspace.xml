@@ -10,20 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="efeffbea-7802-427c-9a6a-e7680b192b00" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/网上考试系统需求分析3.0.docx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/网上考试系统需求分析3.0.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online_exam.sql" beforeDir="false" afterPath="$PROJECT_DIR$/online_exam.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cn/online_exam/dao/AdminDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cn/online_exam/dao/AdminDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cn/online_exam/dao/PaperDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cn/online_exam/dao/PaperDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cn/online_exam/dao/QuestionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cn/online_exam/dao/QuestionDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cn/online_exam/dao/StudentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cn/online_exam/dao/StudentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cn/online_exam/dao/TeacherDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cn/online_exam/dao/TeacherDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cn/online_exam/pojo/Paper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cn/online_exam/pojo/Paper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cn/online_exam/pojo/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cn/online_exam/pojo/Question.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cn/online_exam/pojo/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cn/online_exam/pojo/Teacher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cn/online_exam/pojo/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cn/online_exam/pojo/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/SqlMapperConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SqlMapperConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +40,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/css/index/login.css" root0="SKIP_INSPECTION" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -92,6 +84,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.23950617" />
     <property name="project.structure.side.proportion" value="0.38517442" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="spring" />
   </component>
   <component name="RecentsManager">
@@ -99,6 +92,9 @@
       <recent name="D:\IDEA Projects\onlineExam\src\main\webapp\WEB-INF" />
       <recent name="D:\IDEA Projects\onlineExam\src\main\webapp\WEB-INF\libs" />
       <recent name="D:\IDEA Projects\onlineExam\docs" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IDEA Projects\onlineExam\src\main\webapp\WEB-INF\pages" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.cn.online_exam.dao" />
@@ -283,7 +279,7 @@
       <workItem from="1626508562133" duration="4542000" />
       <workItem from="1626517436793" duration="2790000" />
       <workItem from="1626659379181" duration="17435000" />
-      <workItem from="1626693205375" duration="3161000" />
+      <workItem from="1626693205375" duration="5552000" />
     </task>
     <servers />
   </component>
