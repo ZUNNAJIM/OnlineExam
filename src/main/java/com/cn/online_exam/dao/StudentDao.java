@@ -12,10 +12,6 @@ import java.util.List;
 @Repository
 public interface StudentDao {
 
-
-    @Select("select * from student")
-    public List<Teacher> findAllStudent();
-
     @Update("update student set studentID=#{studentID}, account=#{account}, password=#{password}, " +
     "name=#{name}, gender=#{gender}, major=#{major}, grade=#{grade} where account=#{account}")
     public boolean updateStudent(Student student);

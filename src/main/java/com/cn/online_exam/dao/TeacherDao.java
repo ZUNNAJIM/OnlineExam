@@ -12,8 +12,8 @@ import java.util.List;
 @Repository
 public interface TeacherDao {
 
-    @Select("select * from teacher")
-    public List<Teacher> findAllTeacher(List<Long> longList);
+    @Select("select * from student")
+    public List<Teacher> findAllStudent();
 
     @Update("update teacher set teacherID=#{teacherID},account=#{account},password=#{password},name=#{name}," +
             "gender=#{gender},mail=#{mail},paperID=#{paperID} where account=#{account)")
