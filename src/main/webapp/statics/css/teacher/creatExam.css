@@ -1,8 +1,11 @@
 <style>
+#create-exam{
+	clear: both;
+}
 #create-exam .tab {
 	list-style-type: none;
-	overflow: hidden;
 	margin-left: 0;
+	margin-top: 50px;
 }
 
 #create-exam .tab li {
@@ -14,23 +17,19 @@
 	line-height: 36px;
 	text-align: center;
 	box-sizing: border-box;
-	border-right: 2px solid silver;
-	border-bottom: 2px solid silver;
+	border: 2px solid silver;
+	border-left: none;
 	margin-top: -1px;
+	margin-bottom: 20px;
 	font-weight: bold;
 	cursor: pointer;
 }
 
-/* 切换试卷设置和题目设置栏 */
-.status{
-	display: none;
-}
-/* 试卷设置 */
 .active {
 	background: #b6d6d6;
-	border-bottom: none;
 }
 
+/* 试卷设置 */
 #test-paper {
 	margin-left:30px;
 }
@@ -80,8 +79,6 @@
 /* 题目设置 */
 #topical{
 	display: none;
-	overflow: hidden;
-	position: relative;
 }
 #topical .left-bar,.shiti,.right-bar{
 	float: left;
@@ -93,9 +90,11 @@
 }
 /* 所要添加的题目类型选择 */
 #topical .left-bar{
+	position: relative;
 	width: 200px;
 	min-height: 700px;
 	border-right: 2px solid silver;
+	margin-top: -20px;
 }
 #topical p{
 	font-size: 18px;
@@ -135,7 +134,7 @@
 	border-right: 2px solid silver;
 	padding-left: 20px;
 	position: absolute;
-	top: 0;
+	top: 91px;
 	left: 202px;
 	overflow-y:auto;
 }
@@ -146,7 +145,6 @@
 	height: 36px;
 	line-height: 36px;
 	margin-left: -10px;
-	margin-top: 30px;
 }
 
 #topical .shiti .timu-header .icon-shanchu{
@@ -195,14 +193,19 @@
 	margin-top: 10px;
 	padding-left: 10px;
 }
+#topical .shiti .answer{
+	margin-bottom: 50px;
+}
+
 
 
 /* 右侧题目概况栏 */
 #topical .right-bar{
 	position: absolute;
 	height: 100%;
-	top: 0;
+	top: 91px;
 	left: 884px;
+	padding-right: 30px;
 }
 #topical .right-bar{
 	padding-left: 30px;
@@ -221,10 +224,5 @@
 	background-color: #00AEF8;
 	cursor: pointer;
 }
-
-
-
-
-
 
 </style>

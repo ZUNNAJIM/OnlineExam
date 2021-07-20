@@ -1,0 +1,66 @@
+/* 公共样式 */
+<style>
+#sidebar,#container{
+	float: left;
+}
+
+/* 侧边栏 */
+#sidebar {
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 700px;
+	color: #666666;
+	border-right: 2px solid #666666;
+	background: linear-gradient(to bottom, #9fd2c1, #f2e6fe);
+	padding: 20px 10px 0 5px;
+}
+
+#sidebar,
+#sidebar img {
+	width: 160px;
+}
+
+#sidebar ul li {
+	font-size: 16px;
+	list-style: none;
+	padding: 10px 10px;
+}
+
+#sidebar ul,
+h1 {
+	font-size: 20px;
+	margin-top: 20px;
+}
+
+#sidebar ul li:hover {
+	color: #888888;
+	cursor: pointer;
+}
+#sidebar ul li h1:hover{
+	color: #666666;
+	cursor: default;
+}
+
+/* 版心 */
+#container {
+	position: relative;
+	min-height: 700px;
+	margin-left: 177px;
+	box-shadow: 3px 3px 5px 3px #c4c4c4;
+	overflow: hidden;
+}
+
+/* 退出登录 */
+#logout{
+	font-size: 20px;
+	color: #0082be;
+	position: absolute;
+	top: 20px;
+	right: 30px;
+}
+#logout:hover {
+	color: #00aef8;
+	cursor: pointer;
+}
+</style>
