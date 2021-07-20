@@ -24,7 +24,6 @@
       <list>
         <option value="Jsp File" />
         <option value="spring-beans.schema" />
-        <option value="Class" />
         <option value="Interface" />
         <option value="package-info" />
       </list>
@@ -55,12 +54,13 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="D:\Maven\LocalHome" />
-        <option name="mavenHome" value="$PROJECT_DIR$/../../Maven/apache-maven-3.6.3" />
+        <option name="mavenHome" value="D:/Program Files/Maven/apache-maven-3.6.3" />
         <option name="userSettingsFile" value="D:\Maven\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
       <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
         <option name="jdkForImporter" value="1.8" />
       </MavenImportingSettings>
     </option>
@@ -79,7 +79,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ssm-Online_Examination" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.23950617" />
@@ -88,16 +88,16 @@
     <property name="settings.editor.selected.configurable" value="spring" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.cn.online_exam.dao" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.cn.online_exam.service.impl" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\IDEA Projects\onlineExam\src\main\webapp\WEB-INF" />
       <recent name="D:\IDEA Projects\onlineExam\src\main\webapp\WEB-INF\libs" />
       <recent name="D:\IDEA Projects\onlineExam\docs" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\IDEA Projects\onlineExam\src\main\webapp\WEB-INF\pages" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.cn.online_exam.dao" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.TestFindAll.TestExamResult">
@@ -259,7 +259,10 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="efeffbea-7802-427c-9a6a-e7680b192b00" name="Default Changelist" comment="" />
@@ -284,19 +287,65 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="354" y="65" key="#Notifications" timestamp="1626745883561">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="354" y="65" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1626745883561" />
+    <state x="216" y="61" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1626745899186">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="216" y="61" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1626745899186" />
+    <state x="586" y="106" key="#com.intellij.ide.util.MemberChooser" timestamp="1626745228778">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="586" y="106" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1626745228778" />
+    <state x="471" y="172" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1626696801830">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="471" y="172" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1626696801830" />
+    <state x="586" y="285" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1626696689318">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="586" y="285" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.824@0.0.1536.824" timestamp="1626696689318" />
+    <state x="561" y="151" key="FileChooserDialogImpl" timestamp="1626744637279">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="561" y="151" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1626744637279" />
+    <state x="263" y="48" key="SettingsEditor" timestamp="1626744578434">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="263" y="48" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1626744578434" />
+    <state x="354" y="139" key="Vcs.Push.Dialog.v2" timestamp="1626745876619">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="354" y="139" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1626745876619" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/cn/online_exam/service/impl/AdminServiceImpl.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
