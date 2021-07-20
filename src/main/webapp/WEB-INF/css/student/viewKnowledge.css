@@ -4,6 +4,7 @@ a {
 
 .left {
   position: fixed;
+  padding-top: 3%;
   width: 20%;
   height: 100%;
   background-color: rgb(198, 236, 181);
@@ -16,13 +17,13 @@ a {
 
 .title {
   margin: 25%;
-  font-size: 28px;
+  font-size: 25px;
   font-weight: 700;
   color: rgb(84, 184, 142);
 }
 
 .line {
-  margin: 16px 0;
+  margin: 30px 0;
   background-color: #bbb;
   height: 5px;
 }
@@ -43,23 +44,8 @@ a {
   color:rgb(121, 118, 168);
 }
 
-.sums {
-  font-size: 18px;
-  color: rgb(96, 90, 102);
-  margin: 30px 40px;
-}
 
-.sums .finished {
-  color: coral;
-  font-weight: 700;
-}
-
-.time {
-  margin: 30px 30px;
-  color: #999;
-}
-
-.finish {
+.back {
   margin: 10%;
   height: 60px;
   width: 160px;
@@ -69,7 +55,7 @@ a {
   font-size: 20px;
 }
 
-form {
+.right {
   padding-top: 40px;
   margin-left: 25%;
 }
