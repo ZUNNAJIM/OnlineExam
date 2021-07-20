@@ -13,8 +13,10 @@
 </head>
 <body>
 
-<h3>所有账户信息</h3>
-
+<h3>返回结果</h3>
+<c:forEach items="${paperList}" var="paper">
+  ${paper.toString()}
+</c:forEach>
 
 </body>
 </html>

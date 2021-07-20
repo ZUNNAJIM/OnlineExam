@@ -22,11 +22,11 @@
     </p>
     <p>
         <label>用户名：</label>
-        <input type="text" id="userName" name="name" placeholder="请输入账号" />
+        <input type="text" id="userName" name="name" value="teach01" placeholder="请输入账号" />
     </p>
     <p>
         <label>密&nbsp;&nbsp;&nbsp;码：</label>
-        <input type="password" id="userPwd" name="password" placeholder="请输入密码" />
+        <input type="password" id="userPwd" name="password" value="teach01" placeholder="请输入密码" />
     </p>
     <p>
         <input type="submit" id="loginButton" value="登录" />

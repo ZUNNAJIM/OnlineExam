@@ -10,26 +10,36 @@
 		<!-- 引入公共样式 -->
 		<link rel="stylesheet" href="../../css/teacher/teacherStyle.css" />
 		<!-- 引入网页标题图标 -->
-		<link rel="shortcut icon" href="../../../WEB-INF/OES_favicon%20.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="../../OES_favicon .ico" type="image/x-icon">
 		<!-- 引入iconfont图标 -->
 		<link rel="stylesheet" href="../../css/iconfont/iconfont.css">
 	</head>
 	<body>
 		<!-- 侧边栏 -->
 		<div id="sidebar">
-			<img src="../../img/image/logo.png" />
+			<img src="../statics/img/image/logo.png" />
 			<ul>
 				<li>
 					<h1><span class="iconfont icon-ziyuan143"></span>考试管理</h1>
 				</li>
-				<li>创建考试</li>
-				<li>题库管理</li>
-				<li>考试列表</li>
+				<li>
+					<a href="${pageContext.request.contextPath}/jsp/teacherPage.jsp">创建考试</a>
+				</li>
+				<li>
+					<a href="${pageContext.request.contextPath}/jsp/questionManage.jsp">题库管理</a>
+				</li>
+				<li>
+					<a href="${pageContext.request.contextPath}/jsp/examList.jsp" >考试列表</a>
+				</li>
 				<li>
 					<h1><span class="iconfont icon-shuju"></span>数据统计</h1>
 				</li>
-				<li>考试记录</li>
-				<li>考生信息</li>
+				<li>
+					<a href="" >考试记录</a>
+				</li>
+				<li>
+					<a href="${pageContext.request.contextPath}/jsp/studentInfo.jsp" >考生信息</a>
+				</li>
 				<li>
 					<h1><span class="iconfont icon-yonghu"></span>个人中心</h1>
 				</li>
