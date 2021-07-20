@@ -15,8 +15,8 @@ public interface PaperDao {
     @Select("select * from paper")
     public List<Paper> findAllPaper(List<Long> longList);
 
-
-    @Update("update paper set paperID=#{paperID}, major=#{major} where paperID=#{paperID}")
+    @Update("update paper set paperID=#{paperID}, major=#{major}, exam_name=#[exam_name}, " +
+            "start_time=#{start_time}, end_time=#{end_time}, exam_time=#[exam_time} where paperID=#{paperID}")
     public boolean updatePaper(Paper paper);
 
     @Select("select * from paper where paperID=#{paperID}")
@@ -25,6 +25,7 @@ public interface PaperDao {
     @Delete("delete from paper where paperID=#{paperID}")
     public boolean delPaper(Integer paperID);
 
-    @Insert("insert into paper(paperID,major) values(#{paperID},#{major}")
+    @Insert("insert into paper(paperID, major, exam_name, start_time, end_time, exam_time) " +
+            "values(#{paperID},#{major}, #{exam_name}, #{start_time}, #{end_time}, #{exam_time}")
     public boolean insertPaper(Paper paper);
 }
