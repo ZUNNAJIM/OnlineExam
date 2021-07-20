@@ -13,7 +13,7 @@ import java.util.List;
 public interface PaperDao {
 
     @Select("select * from paper")
-    public List<Paper> findAllPaper();
+    public List<Paper> findAllPaper(List<Long> longList);
 
 
     @Update("update paper set paperID=#{paperID}, major=#{major} where paperID=#{paperID}")
