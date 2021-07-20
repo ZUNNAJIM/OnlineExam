@@ -1,0 +1,27 @@
+/* 考生信息样式 */
+#stu-information{
+	clear: both;
+}
+#stu-information ul{
+	margin-top: 50px;
+}
+#stu-information .stu-head li,#stu-information .stu-main li{
+	float: left;
+	width: 16.66%;
+	color: #7D9EDB;
+	background: lightblue;
+	font-weight: 600;
+	line-height: 36px;
+	text-align: center;
+	box-sizing: border-box;
+	border: 1px solid silver;
+	border-top: none;
+	border-right: none;
+	margin-top: 1px;
+}
+#stu-information .stu-main li{
+	color: #000000;
+	margin-top: 0;
+	font-weight: normal;
+	background: #FFFFFF;
+}

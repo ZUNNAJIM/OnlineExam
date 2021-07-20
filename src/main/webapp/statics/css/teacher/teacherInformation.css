@@ -1,12 +1,21 @@
 #teacher-information{
-	padding-top: 30px;
+	clear: both;
 	padding-left: 30px;
 }
 #teacher-information p{
 	font-size: 20px;
 	font-weight: bold;
 	color: #7D9EDB;
+	margin-top: 50px;
 	margin-bottom: 5px;
+}
+#teacher-info-update{
+	width: 100px;
+	height: 36px;
+	color: #FFFFFF;
+	background-color: #008DC9;
+	border: 1px solid #008DC9;
+	border-radius: 3px;
 }
 #teacher-information .basic,#teacher-information .update-pwd{
 	width: 800px;
@@ -37,7 +46,7 @@
 	background-color: #008DC9;
 	border-color: #008DC9;
 }
-#teacher-information .update-pwd input[type="submit"]:hover{
+#teacher-information .update-pwd input[type="submit"]:hover,#teacher-info-update:hover{
 	background-color: #00AEF8;
 	border-color: #00AEF8;
 }

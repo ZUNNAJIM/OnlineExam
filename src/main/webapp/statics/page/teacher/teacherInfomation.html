@@ -8,18 +8,13 @@
 		<!-- 引入教师个人信息样式 -->
 		<link rel="stylesheet" href="../../css/teacher/teacherInformation.css" />
 		<!-- 引入公共样式 -->
-		<link rel="stylesheet" href="../../css/style.css" />
+		<link rel="stylesheet" href="../../css/teacher/teacherStyle.css" />
 		<!-- 引入网页标题图标 -->
-		<link rel="shortcut icon" href="../../../WEB-INF/OES_favicon%20.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="../../OES_favicon .ico" type="image/x-icon">
 		<!-- 引入iconfont图标 -->
 		<link rel="stylesheet" href="../../css/iconfont/iconfont.css">
 	</head>
 	<body>
-		<!-- 页面头部 -->
-		<div id="header">
-			<span>退出登录</span>
-		</div>
-
 		<!-- 侧边栏 -->
 		<div id="sidebar">
 			<img src="../../img/image/logo.png" />
@@ -44,6 +39,7 @@
 
 		<!-- 版心 -->
 		<div id="container">
+			<div id="logout">退出登录</div>
 			<!-- 教师个人信息 -->
 			<div id="teacher-information">
 				<!-- 基础信息 -->
@@ -54,9 +50,10 @@
 					<li>姓名：<span>12345</span></li>
 					<li>性别：<span>12345</span></li>
 					<li>邮箱：<span>12345</span></li>
-					<li>考试：<span>12345</span></li>
+					<li><input type="button" name="teacher-info-update" id="teacher-info-update" value="修改信息" /></li>
 				</ul>
 				<!-- 修改密码 -->
+				<p>|修改密码</p>
 				<form class="update-pwd" method="post">
 					<input type="password" name="old-pwd" id="old-pwd" placeholder="输入当前密码" />
 					<input type="password" name="repeat-pwd" id="repeat-pwd" placeholder="重复当前密码" />
