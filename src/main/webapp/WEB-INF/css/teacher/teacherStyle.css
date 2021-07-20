@@ -1,24 +1,7 @@
 /* 公共样式 */
 <style>
-/* 页面头部 */
-#header{
-	position: fixed;
-	width: 200px;
-	padding-top: 10px;
-}
-
-#header span {
-	display: inline-block;
-	font-size: 20px;
-	color: #0082be;
-	margin-right: 30px;
-	margin-top: 20px;
-	float: right;
-}
-
-#header span:hover {
-	color: #00aef8;
-	cursor: pointer;
+#sidebar,#container{
+	float: left;
 }
 
 /* 侧边栏 */
@@ -26,7 +9,7 @@
 	position: fixed;
 	left: 0;
 	top: 0;
-	height: 1050px;
+	height: 700px;
 	color: #666666;
 	border-right: 2px solid #666666;
 	background: linear-gradient(to bottom, #9fd2c1, #f2e6fe);
@@ -54,14 +37,30 @@ h1 {
 	color: #888888;
 	cursor: pointer;
 }
+#sidebar ul li h1:hover{
+	color: #666666;
+	cursor: default;
+}
 
 /* 版心 */
 #container {
 	position: relative;
-	top: 20px;
-	clear: both;
-	width: 1100px;
-	margin-left: 178px;
+	min-height: 700px;
+	margin-left: 177px;
 	box-shadow: 3px 3px 5px 3px #c4c4c4;
+	overflow: hidden;
+}
+
+/* 退出登录 */
+#logout{
+	font-size: 20px;
+	color: #0082be;
+	position: absolute;
+	top: 20px;
+	right: 30px;
+}
+#logout:hover {
+	color: #00aef8;
+	cursor: pointer;
 }
 </style>

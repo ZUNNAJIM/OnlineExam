@@ -1,0 +1,68 @@
+<style>
+#ques-manage{
+	clear: both;
+}
+.ques-manage-bar,
+.ques-manage-main {
+	float: left;
+}
+
+#ques-manage .ques-manage-bar {
+	width: 200px;
+	min-height: 700px;
+	border-right: 1px solid silver;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+
+#ques-manage .ques-manage-bar p {
+	font-size: 18px;
+	color: #7D9EDB;
+	margin-bottom: 10px;
+}
+
+#ques-manage .ques-manage-bar ul li {
+	padding: 10px 5px;
+}
+
+#ques-manage .ques-manage-bar ul li:hover {
+	color: #7D9EDB;
+	cursor: pointer;
+}
+
+#add-ques,#update-ques {
+	width: 100px;
+	height: 36px;
+	font-size: 16px;
+	color: #FFFFFF;
+	background-color: #008DC9;
+	border: 2px solid #008DC9;
+	border-radius: 5px;
+	margin-top: 30px;
+}
+
+#add-ques:hover,#update-ques:hover {
+	background-color: #00AEF8;
+	border: 2px solid #00AEF8;
+	cursor: pointer;
+}
+
+#ques-manage .ques-manage-main {
+	position: absolute;
+	border-top: 1px solid silver;
+	top: 50px;
+	left: 221px;
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	overflow-y: auto;
+}
+#ques-manage .ques-manage-main ul li{
+	margin-bottom: 50px;
+}
+
+#update-ques{
+	display: block;
+	margin-top: 20px;
+}
+</style>
