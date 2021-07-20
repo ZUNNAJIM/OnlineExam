@@ -1,5 +1,7 @@
 package com.cn.online_exam.pojo;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.io.Serializable;
 import java.util.Date;
 
@@ -8,7 +10,9 @@ public class Paper implements Serializable {
     private Integer paperID;
     private String major;
     private String exam_name;
+    @DateTimeFormat(pattern="yyyy-MM-dd")
     private Date start_time;
+    @DateTimeFormat(pattern="yyyy-MM-dd")
     private Date end_time;
     private Integer exam_time;
 

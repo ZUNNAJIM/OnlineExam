@@ -179,8 +179,8 @@ CREATE TABLE `paper`
 -- -------------------------------------
 -- Records structure for paper
 -- -------------------------------------
-INSERT INTO `paper` VALUE (1, 'JAVA', 'JAVA-developing', '2021-07-16 10:00:00', '2021-07-16 12:00:00', 120);
-INSERT INTO `paper` VALUE (2, 'C++', 'C++-developing', '2021-07-16 14:00:00', '2021-07-16 16:00:00', 120);
+INSERT INTO `paper` VALUE (1, 'JAVA', 'JAVA-developing', '2021-07-16', '2021-08-16', 120);
+INSERT INTO `paper` VALUE (2, 'C++', 'C++-developing', '2021-07-16', '2021-08-16', 120);
 
     
 SET FOREIGN_KEY_CHECKS = 1;

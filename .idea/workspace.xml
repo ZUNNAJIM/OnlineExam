@@ -22,6 +22,7 @@
         <option value="Interface" />
         <option value="package-info" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -74,7 +75,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ssm-Online_Examination" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.23950617" />
     <property name="project.structure.side.proportion" value="0.38517442" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -90,10 +91,11 @@
       <recent name="D:\IDEA Projects\onlineExam\docs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IDEA Projects\onlineExam\src\main\webapp" />
+      <recent name="D:\IDEA Projects\onlineExam\src\main\webapp\jsp" />
       <recent name="D:\IDEA Projects\onlineExam\src\main\webapp\statics" />
       <recent name="D:\IDEA Projects\onlineExam\src\main\webapp\" />
       <recent name="D:\IDEA Projects\onlineExam\src\main\webapp\WEB-INF\jsp" />
-      <recent name="D:\IDEA Projects\onlineExam\src\main\webapp\WEB-INF\pages" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.cn.online_exam.dao" />
@@ -281,7 +283,7 @@
       <workItem from="1626517436793" duration="2790000" />
       <workItem from="1626659379181" duration="17435000" />
       <workItem from="1626693205375" duration="9399000" />
-      <workItem from="1626762198356" duration="2125000" />
+      <workItem from="1626762198356" duration="5897000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1626745921072</created>
@@ -297,7 +299,21 @@
       <option name="project" value="LOCAL" />
       <updated>1626746449126</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="完善了服务层Teacher和Student接口和实现类">
+      <created>1626754187877</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1626754187877</updated>
+    </task>
+    <task id="LOCAL-00004" summary="完善了服务层所有接口和实现类">
+      <created>1626766013692</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1626766013692</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -355,7 +371,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="完善了服务层的Teacher和Student接口" />
-    <option name="LAST_COMMIT_MESSAGE" value="完善了服务层的Teacher和Student接口" />
+    <MESSAGE value="完善了服务层Teacher和Student接口和实现类" />
+    <MESSAGE value="完善了服务层所有接口和实现类" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善了服务层所有接口和实现类" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
