@@ -17,24 +17,25 @@ public class LoginServiceImpl implements LoginService {
 
     @Override
     public String login(String account, String password, String identity) {
-        if (identity.equals("教师")) {
+
+        if (identity.equals("teacher")) {
             Teacher teacher = adminDao.findTeach(account);
-            if (teacher.getPassword().equals(password)) {
-                return "teacherList.jsp";
+            if (teacher != null && teacher.getPassword().equals(password)) {
+                    return "teacherPage";
             }
-            return "index.jsp";
-        } else if (identity.equals("学生")) {
+            return "../index";
+        } else if (identity.equals("student")) {
             Student student = adminDao.findStu(account);
-            if (student.getPassword().equals(password)) {
-                return "studentList.jsp";
+            if (student != null && student.getPassword().equals(password)) {
+                return "studentPage";
             }
-            return "index.jsp";
+            return "../index";
         } else {
             Administrator administrator = adminDao.findAdmin(account);
-            if (administrator.getPassword().equals(password)) {
-                return "/WEB-INF/pages/list.jsp";
+            if (administrator != null && administrator.getPassword().equals(password)) {
+                return "adminPage";
             }
-            return "/WEB-INF/pages/list.jsp";
+            return "../index";
         }
     }
 }
