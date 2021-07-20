@@ -1,0 +1,43 @@
+#teacher-information{
+	padding-top: 30px;
+	padding-left: 30px;
+}
+#teacher-information p{
+	font-size: 20px;
+	font-weight: bold;
+	color: #7D9EDB;
+	margin-bottom: 5px;
+}
+#teacher-information .basic,#teacher-information .update-pwd{
+	width: 800px;
+	border: 1px solid #9d9d9d;
+	box-shadow: 0 0 3px 1px #e2e2e2;
+	margin-bottom: 20px;
+}
+#teacher-information .basic li{
+	margin: 20px 0 20px 20px;
+}
+#teacher-information .basic li span{
+	color: #666666;
+	margin-left: 30px;
+}
+
+#teacher-information .update-pwd input{
+	display: block;
+	width: 300px;
+	height: 36px;
+	border: 1px solid silver;
+	border-radius: 3px;
+	margin: 30px 0 20px 20px;
+}
+
+#teacher-information .update-pwd input[type="submit"]{
+	width: 100px;
+	color: #FFFFFF;
+	background-color: #008DC9;
+	border-color: #008DC9;
+}
+#teacher-information .update-pwd input[type="submit"]:hover{
+	background-color: #00AEF8;
+	border-color: #00AEF8;
+}
