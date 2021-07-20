@@ -16,13 +16,13 @@ public interface TeacherDao {
     public List<Teacher> findAllStudent();
 
     @Update("update teacher set teacherID=#{teacherID},account=#{account},password=#{password},name=#{name}," +
-            "gender=#{gender},mail=#{mail},paperID=#{paperID} where account=#{account)")
+            "gender=#{gender},mail=#{mail},exam_name=#{exam_name} where account=#{account)")
     public boolean updateTeacher(Teacher teacher);
 
     @Select("select * from teacher where account")
     public Teacher findByAccount(String account);
 
-    @Insert("insert into teacher value(teacherID, account, password, name, gender, mail, paperID) " +
-            "values(#{teacherID}, #{account}, #{password}, #{name}, #{gender}, #{mail}, #{paperID}")
+    @Insert("insert into teacher value(teacherID, account, password, name, gender, mail, exam_name) " +
+            "values(#{teacherID}, #{account}, #{password}, #{name}, #{gender}, #{mail}, #{exam_name}")
     public boolean insertTeacher(Teacher teacher);
 }

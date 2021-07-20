@@ -51,7 +51,7 @@
     </bean>
 
 
-    <!-- 配置AdminDao所在的包-->
+    <!-- 配置Dao所在的包-->
     <bean id="mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com.cn.online_exam.dao"/>
     </bean>

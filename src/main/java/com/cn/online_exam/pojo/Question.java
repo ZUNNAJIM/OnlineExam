@@ -15,12 +15,12 @@ public class Question implements Serializable {
     private String analysis;
     private String point;
     private String difficulty;
-    private Integer paperID;
+    private String exam_name;
 
     public Question(Integer ID, Integer questionID,
                     String question, String answer, String option_a, String option_b,
                     String option_c, String option_d, String analysis,
-                    String point, String difficulty, Integer paperID) {
+                    String point, String difficulty, String exam_name) {
         this.ID = ID;
         this.questionID = questionID;
         this.question = question;
@@ -32,7 +32,7 @@ public class Question implements Serializable {
         this.analysis = analysis;
         this.point = point;
         this.difficulty = difficulty;
-        this.paperID = paperID;
+        this.exam_name = exam_name;
     }
 
     public Integer getID() {
@@ -123,12 +123,12 @@ public class Question implements Serializable {
         this.difficulty = difficulty;
     }
 
-    public Integer getPaperID() {
-        return paperID;
+    public String getExam_name() {
+        return exam_name;
     }
 
-    public void setPaperID(Integer paperID) {
-        this.paperID = paperID;
+    public void setExam_name(String exam_name) {
+        this.exam_name = exam_name;
     }
 
     @Override
@@ -145,7 +145,7 @@ public class Question implements Serializable {
                 ", analysis='" + analysis + '\'' +
                 ", point='" + point + '\'' +
                 ", difficulty='" + difficulty + '\'' +
-                ", paperID=" + paperID +
+                ", paperID=" + exam_name +
                 '}';
     }
 }

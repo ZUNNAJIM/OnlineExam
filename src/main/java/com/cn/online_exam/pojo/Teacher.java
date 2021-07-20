@@ -10,7 +10,7 @@ public class Teacher implements Serializable {
     private String name;
     private Integer gender;
     private String mail;
-    private Integer paperID;
+    private String exam_name;
 
     public String getName() {
         return name;
@@ -28,14 +28,14 @@ public class Teacher implements Serializable {
         this.gender = gender;
     }
 
-    public Teacher(Integer teacherID, String account, String password, String name, Integer gender, String mail, Integer paperID) {
+    public Teacher(Integer teacherID, String account, String password, String name, Integer gender, String mail, String exam_name) {
         this.teacherID = teacherID;
         this.account = account;
         this.password = password;
         this.name = name;
         this.gender = gender;
         this.mail = mail;
-        this.paperID = paperID;
+        this.exam_name = exam_name;
     }
 
 
@@ -71,12 +71,12 @@ public class Teacher implements Serializable {
         this.mail = mail;
     }
 
-    public Integer getPaperID() {
-        return paperID;
+    public String getExam_name() {
+        return exam_name;
     }
 
-    public void setPaperID(Integer paperID) {
-        this.paperID = paperID;
+    public void setExam_name(String exam_name) {
+        this.exam_name = exam_name;
     }
 
     @Override
@@ -88,7 +88,7 @@ public class Teacher implements Serializable {
                 ", name='" + name + '\'' +
                 ", gender=" + gender +
                 ", mail='" + mail + '\'' +
-                ", paperID=" + paperID +
+                ", paperID=" + exam_name +
                 '}';
     }
 }

@@ -1,0 +1,52 @@
+/* 登录页面样式 */
+<style>
+		body{
+			position: relative;
+		}
+		/* 登录表单样式 */
+			#loginForm{
+				position: absolute;
+				width: 500px;
+				height: 350px;
+				left: 50%;
+				margin-left: -250px;
+				margin-top: 140px;
+				box-shadow: 0 5px 10px 0px #999999;
+				z-index: 1;
+			}
+			/* 表单标题样式 */
+			legend{
+				color: #7D9EDB;
+				font-size: 20px;
+				margin-top: 5px;
+				margin-left: 5px;
+			}
+			p{text-align: center;margin-top: 30px;}
+			#radio{text-align: center;margin-top: 10px;}
+			#userName,#userPwd{
+				width: 250px;
+				height: 36px;
+				border: 1px solid #666666;
+			}
+			input[type="submit"]{
+				position: relative;
+				font-size: 20px;
+				border: 1px solid #00AEF8;
+				padding: 5px 20px;
+				border-radius: 10px;
+			}
+			#loginButton{
+				margin-left: 60px;
+				color: #FFFFFF;
+				background-color: #00AEF8;
+			}
+			#registerButton{
+				margin-left: 90px;
+				color: #00AEF8;
+				background-color: #FFFFFF;
+			}
+			#loginButton:hover,#registerButton:hover{
+				color: #FFFFFF;
+				background-color: #008dc9;
+			}
+		</style>

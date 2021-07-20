@@ -16,15 +16,18 @@ public interface QuestionDao {
     @Select("select * from question")
     public List<Question> findAllQuestion();
 
+    @Select("select * from paper where exam_name=#{exam_name}")
+    public List<Question> findExamQuestion(String exam_name);
+
     @Update("update question set ID=#{ID}, questionID=#{questionID}, question=#{question}, answer={#answer}, " +
     "option_a=#{option_a}，option_b=#{option_b}，option_c=#{option_c}，option_d=#{option_d}，analysis=#{analysis}, " +
-    "point=#{point}, difficulty=#{difficulty}, paperID=#[paperID}")
+    "point=#{point}, difficulty=#{difficulty}, exam_name=#{exam_name}")
     public boolean updateQuestion(Question question);
 
     @Insert("insert into question(ID, questionID, question, answer, option_a, " +
-            "option_b, option_c, option_d, analysis, point, difficulty, paperID) " +
+            "option_b, option_c, option_d, analysis, point, difficulty, exam_name) " +
             "values(#{ID}, #{questionID}, #{question}, #{answer}, #{option_a}, #{option_b}, " +
-            "#{option_c}, #{option_d}, #{analysis}, #{point}, #{difficulty}, #{paperID}")
+            "#{option_c}, #{option_d}, #{analysis}, #{point}, #{difficulty}, #{exam_name}")
     public boolean insertQuestion(Question question);
 
     @Delete("delete from question where ID=#{ID}")
