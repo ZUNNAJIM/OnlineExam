@@ -1,0 +1,230 @@
+<style>
+#create-exam .tab {
+	list-style-type: none;
+	overflow: hidden;
+	margin-left: 0;
+}
+
+#create-exam .tab li {
+	float: left;
+	width: 50%;
+	font-size: 20px;
+	color: #7D9EDB;
+	font-weight: 600;
+	line-height: 36px;
+	text-align: center;
+	box-sizing: border-box;
+	border-right: 2px solid silver;
+	border-bottom: 2px solid silver;
+	margin-top: -1px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+/* 切换试卷设置和题目设置栏 */
+.status{
+	display: none;
+}
+/* 试卷设置 */
+.active {
+	background: #b6d6d6;
+	border-bottom: none;
+}
+
+#test-paper {
+	margin-left:30px;
+}
+
+#test-paper div {
+	margin-top: 20px;
+}
+
+#test-paper label {
+	display: inline-block;
+	width: 130px;
+}
+
+#test-paper input {
+	width: 400px;
+	height: 32px;
+	border: 1px solid #b7b7b7;
+	border-radius: 5px;
+}
+
+#test-paper div:nth-child(3) input {
+	width: 200px;
+}
+
+#test-paper div:nth-child(4) input {
+	text-align: center;
+	width: 50px;
+	margin-left: -20px;
+}
+
+#test-paper input[type="button"] {
+	width: 180px;
+	height: 40px;
+	font-size: 17px;
+	color: #FFFFFF;
+	background-color: #0082be;
+	border: 1px solid #0082be;
+	margin-top: 20px;
+}
+
+#test-paper input[type="button"]:hover {
+	background-color: #00aef8;
+	cursor: pointer;
+}
+
+
+/* 题目设置 */
+#topical{
+	display: none;
+	overflow: hidden;
+	position: relative;
+}
+#topical .left-bar,.shiti,.right-bar{
+	float: left;
+}
+.left-bar,.right-bar
+{
+	padding-top: 20px;
+	padding-left: 10px;
+}
+/* 所要添加的题目类型选择 */
+#topical .left-bar{
+	width: 200px;
+	min-height: 700px;
+	border-right: 2px solid silver;
+}
+#topical p{
+	font-size: 18px;
+	color: #7D9EDB;
+}
+#topical .left-bar ul li,#topical .right-bar ul li{
+	padding: 16px 0;
+}
+#topical .left-bar ul li:hover{
+	color: #7D9EDB;
+	cursor: pointer;
+}
+/* 快速定位栏 */
+#topical .left-bar .guide{
+	border-top: 1px solid silver;
+	padding-top: 20px;
+	margin-top: 20px;
+}
+#topical .left-bar .guide span{
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+	text-align: center;
+	line-height: 36px;
+	margin: 5px 3px;
+	background-color: lightblue;
+	border-radius: 18px;
+}
+#topical .left-bar .guide span:hover{
+	background-color: #7D9EDB;
+	cursor: pointer;
+}
+/* 试卷浏览部分 */
+#topical .shiti {
+	width: 680px;
+	height: 100%;
+	border-right: 2px solid silver;
+	padding-left: 20px;
+	position: absolute;
+	top: 0;
+	left: 202px;
+	overflow-y:auto;
+}
+
+/* 题目头部 */
+#topical .shiti .timu-header{
+	background-color: lightblue;
+	height: 36px;
+	line-height: 36px;
+	margin-left: -10px;
+	margin-top: 30px;
+}
+
+#topical .shiti .timu-header .icon-shanchu{
+	display: inline-block;
+	font-size: 20px;
+	margin-left: 400px;
+}
+#topical .shiti .timu-header .icon-shanchu:hover{
+	font-size: 22px;
+	color: #2daf0f;
+}
+
+#score{
+	width: 36px;
+	height: 18px;
+	text-align: center;
+	margin-left: -5px;
+}
+#addScore,#subScore{
+	width: 24px;
+	height: 24px;
+	background-color: #FFF;
+	border: 1px solid #000000;
+}
+#subScore{
+	margin-left: 30px;
+	border-radius: 12px 0 0 12px;
+	border-right: none;
+}
+#addScore{
+	margin-left: -5px;
+	border-radius: 0 12px 12px 0;
+	border-left: none;
+}
+#addScore:hover,#subScore:hover{
+	background-color: #7D9EDB;
+	border-color: #7D9EDB;
+}
+
+/* 题目 */
+#topical .shiti textarea{
+	resize: none;
+	margin-top: 10px;
+}
+#topical .shiti .option input{
+	margin-top: 10px;
+	padding-left: 10px;
+}
+
+
+/* 右侧题目概况栏 */
+#topical .right-bar{
+	position: absolute;
+	height: 100%;
+	top: 0;
+	left: 884px;
+}
+#topical .right-bar{
+	padding-left: 30px;
+}
+#topical .right-bar input{
+	width: 100px;
+	height: 36px;
+	font-size: 18px;
+	color: #FFFFFF;
+	background-color: lightblue;
+	border: 1px solid lightblue;
+	border-radius: 10px;
+	margin-top: 30px;
+}
+#topical .right-bar input:hover{
+	background-color: #00AEF8;
+	cursor: pointer;
+}
+
+
+
+
+
+
+</style>
