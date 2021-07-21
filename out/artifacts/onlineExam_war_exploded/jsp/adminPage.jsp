@@ -36,13 +36,12 @@
 <div class="line"></div>
 
 <div>
-    <form name="admin" action="/admin/getInfo" method="post">
-        <div class="jump"><input type="submit" value="" formaction="/admin/getInfo">个人信息管理</div>
+    <form name="admin" action="${pageContext.request.contextPath}/admin/getInfo" method="post">
+        <div class="jump"><input type="submit">个人信息管理</div>
+    </form>
         <%--    <div class="jump"><a href="${pageContext.request.contextPath}/jsp/adminInformation.jsp">个人信息管理</a></div>--%>
         <div class="jump"><a href="${pageContext.request.contextPath}/jsp/teacherManage.jsp">教师信息管理</a></div>
         <div class="jump"><a href="${pageContext.request.contextPath}/jsp/studentManage.jsp">学生信息管理</a></div>
-    </form>
-
 </div>
 </body>
 
