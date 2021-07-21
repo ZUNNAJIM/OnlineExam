@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: zunnajim
@@ -40,16 +41,34 @@
     <input type="text" placeholder="输入账号或编号查询教师信息">
 </div>
 
-<form action="#" name="tcr1">
-    <div class="id">编号： <span id="id">${teacherList[0].teacherID}</span> <button class="changeName">修改编号</button> </div>
-    <div class="account">账号： <span id="account">${teacherList[0].account}</span> <button class="changeAccount">修改账号</button> </div>
-    <div class="pwd">密码： <span id="pwd">${teacherList[0].password}</span> <button class="changePwd">修改密码</button> </div>
+<div class="id">
+<form action="" method="post">
+    <table border="1">
+        <c:forEach items="${requestScope.teacherList}" varStatus="status" var="item">
+            <tr>
+                <td>${item.teacherID}</td>
+                <td>${item.account}</td>
+                <td>${item.password}</td>
+                <td>${item.name}</td>
+                <td>${item.gender}</td>
+                <td>${item.mail}</td>
+                <td>${item.exam_name}</td>
+                <td> <input type="submit" value="${status.index}" name="index" >删除</td>
+            </tr>
+        </c:forEach>
+    </table>
 </form>
-<form action="#" name="tcr2">
-    <div class="id">编号： <span id="id">${teacherList[1].teacherID}</span> <button class="changeName">修改编号</button> </div>
-    <div class="account">账号： <span id="account">${teacherList[1].account}</span> <button class="changeAccount">修改账号</button> </div>
-    <div class="pwd">密码： <span id="pwd">${teacherList[1].password}</span> <button class="changePwd">修改密码</button> </div>
-</form>
+</div>
+<%--<form action="#" name="tcr1">--%>
+<%--    <div class="id">编号： <span id="id">${teacherList[0].teacherID}</span> <button class="changeName">修改编号</button> </div>--%>
+<%--    <div class="account">账号： <span id="account">${teacherList[0].account}</span> <button class="changeAccount">修改账号</button> </div>--%>
+<%--    <div class="pwd">密码： <span id="pwd">${teacherList[0].password}</span> <button class="changePwd">修改密码</button> </div>--%>
+<%--</form>--%>
+<%--<form action="#" name="tcr2">--%>
+<%--    <div class="id">编号： <span id="id">${teacherList[1].teacherID}</span> <button class="changeName">修改编号</button> </div>--%>
+<%--    <div class="account">账号： <span id="account">${teacherList[1].account}</span> <button class="changeAccount">修改账号</button> </div>--%>
+<%--    <div class="pwd">密码： <span id="pwd">${teacherList[1].password}</span> <button class="changePwd">修改密码</button> </div>--%>
+<%--</form>--%>
 <div>
 
 </div>

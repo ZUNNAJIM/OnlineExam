@@ -58,6 +58,14 @@ public class TestFindAll {
 
     }
 
+    @Test
+    public void addAdmin()
+    {
+        Administrator administrator = new Administrator(null, "test", "test");
+        adminDao.addAdmin(administrator);
+        this.findAll();
+    }
+
     @After
     public void Destroy() throws IOException {
         in.close();

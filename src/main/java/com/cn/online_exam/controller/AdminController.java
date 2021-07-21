@@ -27,59 +27,136 @@ public class AdminController {
     @Autowired
     private TeacherService teacherService;
 
-//    @RequestMapping("/findAll")
-//    public String findAll(Model model)
-//    {
-//        List<Administrator> administratorList = adminService.findALL();
-//        model.addAttribute("list",administratorList);
-//        return "list";
-//    }
 
-
+    /**
+     * 返回自己的信息
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     @RequestMapping("/getInfo")
     public void getInfo(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String  name = (String) request.getSession().getAttribute("name");
-        System.out.println(name);
         Administrator administrator = adminService.findAdmin(name);
-        System.out.println(administrator.toString());
         request.setAttribute("admin", administrator);
         request.getRequestDispatcher("/jsp/adminInformation.jsp").forward(request,response);
     }
 
 
+    /**
+     * 更新自己的信息
+     * @param request
+     * @param response
+     * @return
+     */
     @RequestMapping("/update")
     public String update(HttpServletRequest request, HttpServletResponse response) {
         String new_name = request.getParameter("new_name");
-        request.getSession().setAttribute("name",new_name);
         String new_password = request.getParameter("new_password");
+        System.out.println(new_password == null);
+        System.out.println(new_name == null);
         Integer ID = adminService.findAdmin((String) request.getSession().getAttribute("name")).getAdminID();
         System.out.println(ID);
         Administrator administrator = null;
         if (!new_password.equals("")) {
-            administrator = new Administrator(ID, new_name, new_password);
+            administrator = new Administrator(null, new_name, new_password);
         } else {
-            administrator = new Administrator(ID,new_name, (String) request.getSession().getAttribute("password"));
+            administrator = new Administrator(null,new_name, (String) request.getSession().getAttribute("password"));
         }
+        System.out.println(administrator.toString());
         adminService.updateAdmin(administrator);
         return "../success";
     }
 
 
+    /**
+     * 查找所有的教师
+     * @param request
+     * @param response
+     * @return
+     * @throws ServletException
+     * @throws IOException
+     */
     @RequestMapping("/getAllTeach")
     public String getAllTeach(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List<Teacher> teacherList = adminService.findAllTeacher();
         request.setAttribute("teacherList",teacherList);
-//        request.getRequestDispatcher("/jsp/teacherManage.jsp").forward(request, response);
         return "teacherManage";
     }
 
+    /**
+     * 删除老师
+     * @param request
+     * @param response
+     * @return
+     */
+    @RequestMapping("/delTaech")
+    public String delTeach(HttpServletRequest request, HttpServletResponse response) {
+        List<Teacher> teacherList = adminService.findAllTeacher();
+        Integer index = Integer.valueOf(request.getParameter("index"));
+        String account = teacherList.get(index).getAccount();
+        adminService.delTeacher(account);
+        // TODO
+        return "../success";
+    }
 
+
+    /**
+     * 查找所有的学生
+     * @param request
+     * @param response
+     * @return
+     * @throws ServletException
+     * @throws IOException
+     */
     @RequestMapping("/getAllStu")
     public String getAllStu(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List<Student> studentList = teacherService.findAllStudent();
         request.setAttribute("studentList", studentList);
-//        request.getRequestDispatcher("/jsp/studentManage.jsp").forward(request,response);
         return "studentManage";
     }
 
+    @RequestMapping("/delStu")
+    public String delStu(HttpServletRequest request, HttpServletResponse response) {
+        List<Student> studentList = teacherService.findAllStudent();
+        Integer index = Integer.valueOf(request.getParameter("index"));
+        String account = studentList.get(index).getAccount();
+        adminService.delStudent(account);
+        // TODO
+        return "../success";
     }
+
+
+    /**
+     * 查找所有的管理员
+     * @param request
+     * @param response
+     * @return
+     * @throws ServletException
+     * @throws IOException
+     */
+    @RequestMapping("/getAllAdmin")
+    public String getAllAdmin(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        List<Administrator> administratorList = adminService.findALL();
+        request.setAttribute("administratorList", administratorList);
+        return "adminManage";
+    }
+
+    /**
+     * 删除管理员
+     * @param request
+     * @param response
+     * @return
+     */
+    @RequestMapping("/delAdmin")
+    public String delAdmin(HttpServletRequest request, HttpServletResponse response) {
+        List<Administrator> administratorList = adminService.findALL();
+        Integer index = Integer.valueOf(request.getParameter("index"));
+        String account = administratorList.get(index).getAccount();
+        adminService.delAdmin(account);
+        System.out.println(index);
+        // TODO
+        return "../success";
+    }
+}

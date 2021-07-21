@@ -4,6 +4,7 @@
   Date: 2021/7/20
   Time: 22:38
   To change this template use File | Settings | File Templates.
+  NOT CHECKEd!!!
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!-- 管理员主界面 -->
@@ -38,11 +39,14 @@
     <form action="${pageContext.request.contextPath}/admin/getInfo" method="post">
         <div class="jump"><input name="name" value="${name}" type="submit">个人信息管理</div>
     </form>
-    <form name="teach" action="/admin/getAllTeach" method="post" >
+    <form name="teach" action="${pageContext.request.contextPath}/admin/getAllTeach" method="post" >
         <div class="jump"><input type="submit" >教师信息管理</div>
     </form>
-    <form action="" method="post">
-        <div class="jump">学生信息管理</div>
+    <form action="${pageContext.request.contextPath}/admin/getAllStu" method="post">
+        <div class="jump"><input type="submit">学生信息管理</div>
+    </form>
+    <form action="${pageContext.request.contextPath}/admin/getAllAdmin" method="post">
+        <div class="jump"><input type="submit">管理员信息管理</div>
     </form>
 </div>
 </body>
