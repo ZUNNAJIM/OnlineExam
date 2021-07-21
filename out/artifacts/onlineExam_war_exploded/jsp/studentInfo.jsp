@@ -52,7 +52,9 @@
         <li>
             <h1><span class="iconfont icon-yonghu"></span>个人中心</h1>
         </li>
-        <li>信息管理</li>
+        <li>
+            <a href="${pageContext.request.contextPath}/jsp/teacherInfo.jsp" >信息管理</a>
+        </li>
     </ul>
 </div>
 

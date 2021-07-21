@@ -7,7 +7,6 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
 <!-- 学生考前信息确认界面 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -21,7 +20,7 @@
     <!-- css样式 -->
     <link rel="stylesheet" href="../statics/css/student/beforeExam.css" />
     <!-- 引入网页标题图标 -->
-    <link rel="shortcut icon" href="../statics/OES_favicon%20.icoco" type="image/x-icon">
+    <link rel="shortcut icon" href="../statics/OES_favicon%20.ico" type="image/x-icon">
     <!-- 引入iconfont图标 -->
     <link rel="stylesheet" href="../statics/css/iconfont/iconfont.css">
 </head>
@@ -52,9 +51,8 @@
     </ul>
 </div>
 
-<button class="begin"><a href="examing.jsp">确认开始</a></button>
-<button class="back"><a href="studentPage.jsp">返回主页</a></button>
+<button class="begin"><a href="${pageContext.request.contextPath}/jsp/examing.jsp">确认开始</a></button>
+<button class="back"><a href="${pageContext.request.contextPath}/jsp/studentPage.jsp">返回主页</a></button>
 
 </body>
 </html>
-

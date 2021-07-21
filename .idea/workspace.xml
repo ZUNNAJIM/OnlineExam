@@ -11,9 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="efeffbea-7802-427c-9a6a-e7680b192b00" name="Default Changelist" comment="完善了服务层所有接口和实现类">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cn/online_exam/service/impl/LoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cn/online_exam/service/impl/LoginServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/adminPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/adminPage.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,17 +117,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestFindAll.TestExamResult" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="onlineExam" />
       <extension name="coverage">
@@ -164,11 +150,12 @@
       </method>
     </configuration>
     <configuration name="Tomcat 8.5.60" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.60" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/onlineExam_war/" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="onlineExam:war exploded">
+        <artifact name="onlineExam:war">
           <settings>
-            <option name="CONTEXT_PATH" value="/onlineExam_war_exploded" />
+            <option name="CONTEXT_PATH" value="/onlineExam_war" />
           </settings>
         </artifact>
       </deployment>
@@ -245,7 +232,9 @@
       </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="onlineExam:war" />
+        </option>
       </method>
     </configuration>
     <list>
@@ -288,6 +277,7 @@
       <workItem from="1626693205375" duration="9399000" />
       <workItem from="1626762198356" duration="5897000" />
       <workItem from="1626828719977" duration="1723000" />
+      <workItem from="1626830739660" duration="205000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1626745921072</created>
@@ -334,7 +324,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="zunnajim" />
+                        <option value="origin/master" />
                       </list>
                     </value>
                   </entry>

@@ -32,10 +32,10 @@
             <h1><span class="iconfont icon-ziyuan143"></span>考试管理</h1>
         </li>
         <li>
-            <a href="${pageContext.request.contextPath}/jsp/teacher/teacherPage.jsp">创建考试</a>
+            <a href="${pageContext.request.contextPath}/jsp/teacherPage.jsp">创建考试</a>
         </li>
         <li>
-            <a href="${pageContext.request.contextPath}/jsp/teacher/questionManage.jsp">题库管理</a>
+            <a href="${pageContext.request.contextPath}/jsp/questionManage.jsp">题库管理</a>
         </li>
         <li>
             <a href="${pageContext.request.contextPath}/jsp/examList.jsp" >考试列表</a>
@@ -47,12 +47,14 @@
             <a href="" >考试记录</a>
         </li>
         <li>
-            <a href="${pageContext.request.contextPath}/jsp/teacher/studentInfo.jsp" >考生信息</a>
+            <a href="${pageContext.request.contextPath}/jsp/studentInfo.jsp" >考生信息</a>
         </li>
         <li>
             <h1><span class="iconfont icon-yonghu"></span>个人中心</h1>
         </li>
-        <li>信息管理</li>
+        <li>
+            <a href="${pageContext.request.contextPath}/jsp/teacherInfo.jsp" >信息管理</a>
+        </li>
     </ul>
 </div>
 

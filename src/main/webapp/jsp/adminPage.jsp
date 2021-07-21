@@ -30,7 +30,7 @@
     <img src="../statics/img/image/logo.png" alt="logo">
     <span>管理员主界面</span>
 </div>
-<button class="exit"><a href="#">退出登录</a></button>
+<button class="exit"><a href="../index.jsp">退出登录</a></button>
 
 <!-- 分割线 -->
 <div class="line"></div>
