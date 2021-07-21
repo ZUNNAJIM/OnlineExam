@@ -23,19 +23,21 @@ public class LoginServiceImpl implements LoginService {
             if (teacher != null && teacher.getPassword().equals(password)) {
                     return "teacherPage";
             }
-            return "../index";
+//            return "../index";
         } else if (identity.equals("student")) {
             Student student = adminDao.findStu(account);
             if (student != null && student.getPassword().equals(password)) {
                 return "studentPage";
             }
-            return "../index";
+//            return "../index";
         } else {
             Administrator administrator = adminDao.findAdmin(account);
+            System.out.println(administrator.toString());
             if (administrator != null && administrator.getPassword().equals(password)) {
                 return "adminPage";
             }
-            return "../index";
+//            return "../index";
         }
+        return "../index";
     }
 }
