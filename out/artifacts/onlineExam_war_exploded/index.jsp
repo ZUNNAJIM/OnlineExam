@@ -1,6 +1,7 @@
-<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%@ page language="java" import="java.util.*"
+         errorPage="/errorPage.jsp" pageEncoding="utf-8"%>
+
 <!-- 登录页面 -->
-<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">

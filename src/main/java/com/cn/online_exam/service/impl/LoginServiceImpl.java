@@ -32,7 +32,7 @@ public class LoginServiceImpl implements LoginService {
 //            return "../index";
         } else {
             Administrator administrator = adminDao.findAdmin(account);
-            System.out.println(administrator.toString());
+//            System.out.println(administrator.toString());
             if (administrator != null && administrator.getPassword().equals(password)) {
                 return "adminPage";
             }
