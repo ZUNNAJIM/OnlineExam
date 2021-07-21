@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="onlineExam:war exploded" />
+      <artifact name="onlineExam:war" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -11,6 +11,26 @@
   <component name="ChangeListManager">
     <list default="true" id="efeffbea-7802-427c-9a6a-e7680b192b00" name="Default Changelist" comment="完善了服务层所有接口和实现类">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/onlineExam_war/onlineExam_war.war" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/onlineExam_war/onlineExam_war.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/WEB-INF/classes/com/cn/online_exam/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/WEB-INF/classes/com/cn/online_exam/controller/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/WEB-INF/classes/com/cn/online_exam/service/impl/LoginServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/WEB-INF/classes/com/cn/online_exam/service/impl/LoginServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/jsp/adminInformation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/jsp/adminInformation.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/jsp/adminPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/jsp/adminPage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cn/online_exam/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cn/online_exam/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cn/online_exam/service/impl/LoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cn/online_exam/service/impl/LoginServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/adminInformation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/adminInformation.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/adminPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/adminPage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/css/student/studentInformation.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/css/student/studentInformation.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/css/student/studentPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/css/student/studentPage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/page/admin/adminInformation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/page/admin/adminInformation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/page/admin/studentManagement.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/page/admin/studentManagement.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/page/student/afterExam.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/page/student/afterExam.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/page/student/beforeExam.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/page/student/beforeExam.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/page/student/examing.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/page/student/examing.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/page/student/studentInformation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/page/student/studentInformation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/page/student/studentPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/page/student/studentPage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,6 +137,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestFindAll.TestExamResult" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="onlineExam" />
       <extension name="coverage">
@@ -150,8 +183,9 @@
       </method>
     </configuration>
     <configuration name="Tomcat 8.5.60" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.60" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/onlineExam_war/" />
-      <option name="UPDATING_POLICY" value="restart-server" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="HOT_SWAP_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
         <artifact name="onlineExam:war">
           <settings>
@@ -277,7 +311,7 @@
       <workItem from="1626693205375" duration="9399000" />
       <workItem from="1626762198356" duration="5897000" />
       <workItem from="1626828719977" duration="1723000" />
-      <workItem from="1626830739660" duration="205000" />
+      <workItem from="1626830739660" duration="7781000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1626745921072</created>

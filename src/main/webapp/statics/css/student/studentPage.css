@@ -16,6 +16,7 @@ a {
   color: #999;
 }
 
+
 img {
   width: 200px;
   margin-top: 30px;
@@ -53,7 +54,7 @@ button a {
   height: 100px;
   width: 200px;
   background-color: rgb(138, 176, 248);
-  /* border: 3px solid #ccc; */
+  border: 3px solid #ccc;
   border-radius: 15px;
   text-align: center;
   line-height: 100px;

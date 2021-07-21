@@ -1,4 +1,4 @@
-<%--
+<%@ page import="com.cn.online_exam.pojo.Administrator" %><%--
   Created by IntelliJ IDEA.
   User: zunnajim
   Date: 2021/7/20
@@ -7,9 +7,8 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!-- 管理员个人信息界面 -->
-<!DOCTYPE html>
-<html lang="en">
-
+<%--<!DOCTYPE html>--%>
+<%--<html lang="en">--%>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,10 +35,11 @@
 <!-- 分割线 -->
 <div class="line"></div>
 
-<form action="#" name="yyy">
-    <div class="id">编号： <span id="id">123456</span> <button class="changeName">修改编号</button> </div>
-    <div class="account">账号： <span id="account">654321</span> <button class="changeAccount">修改账号</button> </div>
-    <div class="pwd">密码： <span id="pwd">654321</span> <button class="changePwd">修改密码</button> </div>
+<form action="/admin/update" name="yyy">
+<%--    <% Administrator administrator = (Administrator) request.getAttribute("admin"); %>--%>
+<%--    <div class="id">编号： <span id="id">123456</span> <button class="changeName">修改编号</button> </div>--%>
+    <div class="account">账号： <span id="account">${admin.account}</span> <button class="changeAccount">修改账号</button> </div>
+    <div class="pwd">密码： <span id="pwd">${admin.password}</span> <button class="changePwd">修改密码</button> </div>
 </form>
 <div>
 </div>
