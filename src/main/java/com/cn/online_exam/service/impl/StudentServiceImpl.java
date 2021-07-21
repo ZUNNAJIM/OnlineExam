@@ -5,8 +5,11 @@ import com.cn.online_exam.dao.TeacherDao;
 import com.cn.online_exam.pojo.Student;
 import com.cn.online_exam.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service("studentService")
 public class StudentServiceImpl implements StudentService {
+
     @Autowired
     private StudentDao studentDao;
     @Override
