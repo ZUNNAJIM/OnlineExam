@@ -3,12 +3,15 @@ package com.cn.online_exam.service.impl;
 import com.cn.online_exam.dao.QuestionDao;
 import com.cn.online_exam.dao.TeacherDao;
 import com.cn.online_exam.pojo.Question;
+import com.cn.online_exam.pojo.Student;
 import com.cn.online_exam.pojo.Teacher;
 import com.cn.online_exam.service.TeacherService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service("teacherService")
 public class TeacherServiceImpl implements TeacherService {
     @Autowired
     private TeacherDao teacherDao;
@@ -17,7 +20,7 @@ public class TeacherServiceImpl implements TeacherService {
     private QuestionDao questionDao;
 
     @Override
-    public List<Teacher> findAllStudent() {
+    public List<Student> findAllStudent() {
         return teacherDao.findAllStudent();
     }
 

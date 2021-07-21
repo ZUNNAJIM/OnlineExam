@@ -23,6 +23,12 @@
 
     <mappers>
 <!--        <mapper class="com.cn.online_exam.dao.AdminDao"/>-->
-        <package name="com.cn.online_exam.dao"/>
+        <mapper class="com.cn.online_exam.dao.AdminDao"/>
+        <mapper class="com.cn.online_exam.dao.PaperDao"/>
+        <mapper class="com.cn.online_exam.dao.ExamResultDao"/>
+        <mapper class="com.cn.online_exam.dao.TeacherDao"/>
+        <mapper class="com.cn.online_exam.dao.StudentDao"/>
+        <mapper class="com.cn.online_exam.dao.QuestionDao"/>
+<!--        <package name="com.cn.online_exam.dao"/>-->
     </mappers>
 </configuration>

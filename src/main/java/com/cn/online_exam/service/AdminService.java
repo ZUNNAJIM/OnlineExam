@@ -3,6 +3,7 @@ package com.cn.online_exam.service;
 import com.cn.online_exam.pojo.Administrator;
 import com.cn.online_exam.pojo.Student;
 import com.cn.online_exam.pojo.Teacher;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
@@ -14,6 +15,7 @@ public interface AdminService {
 
     List<Administrator> findALL();
     Administrator findAdmin(String account);
+    Integer findAdminID(String account);
     Teacher findTeach(String account);
     Student findStu(String account);
 

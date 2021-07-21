@@ -12,6 +12,7 @@ import java.util.List;
 
 @Service("adminService")
 public class AdminServiceImpl implements AdminService {
+
     @Autowired
     private AdminDao adminDao;
 
@@ -28,6 +29,11 @@ public class AdminServiceImpl implements AdminService {
     @Override
     public Administrator findAdmin(String account) {
         return adminDao.findAdmin(account);
+    }
+
+    @Override
+    public Integer findAdminID(String account) {
+        return adminDao.getAdminID(account);
     }
 
     @Override

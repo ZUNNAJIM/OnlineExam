@@ -26,6 +26,7 @@ public interface AdminDao {
 
 
 
+
     /**
      * 根据账号名返回密码，判断是否等于用户输入的密码.
      * @param account    账号
@@ -33,6 +34,9 @@ public interface AdminDao {
      */
     @Select("select * from admin where account=#{account}")
     public Administrator findAdmin(String account);
+
+    @Select("select adminID from admin where account=#{account}")
+    public Integer getAdminID(String  account);
 
     @Select("select * from teacher where account=#{account}")
     public Teacher findTeach(String account);

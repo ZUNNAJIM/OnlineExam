@@ -1,5 +1,6 @@
 package com.cn.online_exam.dao;
 
+import com.cn.online_exam.pojo.Student;
 import com.cn.online_exam.pojo.Teacher;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
@@ -13,7 +14,7 @@ import java.util.List;
 public interface TeacherDao {
 
     @Select("select * from student")
-    public List<Teacher> findAllStudent();
+    public List<Student> findAllStudent();
 
     @Update("update teacher set teacherID=#{teacherID},account=#{account},password=#{password},name=#{name}," +
             "gender=#{gender},mail=#{mail},exam_name=#{exam_name} where account=#{account)")

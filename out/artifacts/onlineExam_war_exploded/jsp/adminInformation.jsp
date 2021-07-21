@@ -35,11 +35,16 @@
 <!-- 分割线 -->
 <div class="line"></div>
 
-<form action="/admin/update" name="yyy">
+
+<form action="${pageContext.request.contextPath}/admin/update" name="yyy">
 <%--    <% Administrator administrator = (Administrator) request.getAttribute("admin"); %>--%>
-<%--    <div class="id">编号： <span id="id">123456</span> <button class="changeName">修改编号</button> </div>--%>
-    <div class="account">账号： <span id="account">${admin.account}</span> <button class="changeAccount">修改账号</button> </div>
-    <div class="pwd">密码： <span id="pwd">${admin.password}</span> <button class="changePwd">修改密码</button> </div>
+    <div class="id">编号： <span id="id">${admin.adminID}</span></div>
+    <div class="account">账号： <span id="account">${admin.account}</span>
+        <span><input  type="text" name="new_name" placeholder="新账号"></span>
+        <button type="submit" class="changeAccount">修改账号</button> </div>
+    <div class="pwd">密码： <span id="pwd">${admin.password}</span>
+        <span><input name="new_password" type="text" placeholder="新密码"></span>
+        <button type="submit" class="changePwd">修改密码</button> </div>
 </form>
 <div>
 </div>

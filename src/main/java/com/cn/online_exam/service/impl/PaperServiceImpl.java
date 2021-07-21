@@ -12,6 +12,7 @@ import java.util.List;
 
 @Service("PaperService")
 public class PaperServiceImpl implements PaperService {
+
     @Autowired
     private PaperDao paperDao;
 
