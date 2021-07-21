@@ -30,15 +30,15 @@
     <img src="../statics/img/image/logo.png" alt="logo">
     <span>管理员主界面</span>
 </div>
-<button class="exit"><a href="#">退出登录</a></button>
+<button class="exit"><a href="../index.jsp">退出登录</a></button>
 
 <!-- 分割线 -->
 <div class="line"></div>
 
 <div>
-    <div class="jump"><a href="adminInformation.html">个人信息管理</a></div>
-    <div class="jump"><a href="teacherManagement.html">教师信息管理</a></div>
-    <div class="jump"><a href="studentManagement.html">学生信息管理</a></div>
+    <div class="jump"><a href="${pageContext.request.contextPath}/jsp/adminInformation.jsp">个人信息管理</a></div>
+    <div class="jump"><a href="${pageContext.request.contextPath}/jsp/teacherManage.jsp">教师信息管理</a></div>
+    <div class="jump"><a href="${pageContext.request.contextPath}/jsp/studentManage.jsp">学生信息管理</a></div>
 </div>
 </body>
 

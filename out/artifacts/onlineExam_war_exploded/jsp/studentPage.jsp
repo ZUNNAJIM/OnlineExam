@@ -32,13 +32,13 @@
     <img src="../statics/img/image/logo.png" alt="logo">
     <span>学生主界面</span>
 </div>
-<button class="exit"><a href="${pageContext.request.contextPath}/LogService/logout">退出登录</a></button>
+<button class="exit"><a href="#">退出登录</a></button>
 
 <!-- 分割线 -->
 <div class="line"></div>
 
 <div>
-    <div class="jump"><a href="${pageContext.request.contextPath}/jsp/student/beforeExam.jsp">参加考试</a></div>
+    <div class="jump"><a href="${pageContext.request.contextPath}/jsp/beforeExam.jsp">参加考试</a></div>
     <div class="jump"><a href="#">查看知识点</a></div>
     <div class="jump"><a href="#">个人信息管理</a></div>
     <div class="jump"><a href="#">查询考试成绩</a></div>

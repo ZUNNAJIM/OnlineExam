@@ -10,81 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="efeffbea-7802-427c-9a6a-e7680b192b00" name="Default Changelist" comment="完善了服务层所有接口和实现类">
-      <change afterPath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/WEB-INF/classes/com/cn/online_exam/controller/TeacherController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/WEB-INF/classes/com/cn/online_exam/service/PaperService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/WEB-INF/classes/com/cn/online_exam/service/impl/PaperServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/jsp/examList.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/jsp/questionManage.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/jsp/studentInfo.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/jsp/teacherInfo.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/statics/css/student/checkGrade.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/statics/css/student/studentInformation.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/statics/css/student/viewKnowledge.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/statics/page/student/checkGrade.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/statics/page/student/studentInformation.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/statics/page/student/viewKnowledge.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/adminInformation.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/adminPage.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/checkGrade.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/examList.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/point.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/questionManage.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/studentInfo.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/studentInformation.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/studentManage.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/teacherInfo.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/teacherManage.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/css/admin/adminInformation.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/css/admin/adminPage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/css/admin/studentManagement.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/css/admin/teacherManagement.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/page/admin/adminInformation.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/page/admin/adminPage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/page/admin/studentManagement.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/page/admin/teacherManagement.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/cn/online_exam/controller/TeacherController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/cn/online_exam/service/PaperService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/cn/online_exam/service/impl/PaperServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/WEB-INF/classes/com/cn/online_exam/controller/PaperController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/WEB-INF/classes/com/cn/online_exam/dao/PaperDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/WEB-INF/classes/com/cn/online_exam/dao/PaperDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/WEB-INF/classes/com/cn/online_exam/service/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/WEB-INF/classes/com/cn/online_exam/service/AdminService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/WEB-INF/classes/com/cn/online_exam/service/impl/AdminServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/WEB-INF/classes/com/cn/online_exam/service/impl/AdminServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/WEB-INF/classes/com/cn/online_exam/service/impl/TeacherServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/WEB-INF/classes/com/cn/online_exam/service/impl/TeacherServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/jsp/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/jsp/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/jsp/studentPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/jsp/studentPage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/jsp/teacherPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/jsp/teacherPage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/statics/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/statics/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/statics/page/teacher/createExam.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/statics/page/teacher/createExam.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/statics/page/teacher/examList.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/statics/page/teacher/examList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/statics/page/teacher/teacherInfomation.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/statics/page/teacher/teacherInfomation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cn/online_exam/controller/PaperController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cn/online_exam/controller/TeacherController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cn/online_exam/service/PaperService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cn/online_exam/service/PaperService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cn/online_exam/service/impl/PaperServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cn/online_exam/service/impl/PaperServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/teacher/quesManage.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/statics/css/teacher/quesManage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/teacher/studentInformation.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/statics/css/teacher/studentInformation.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/teacher/teacherStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/statics/css/teacher/teacherStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/page/teacher/quesManage.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/statics/page/teacher/quesManage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/page/teacher/studentInformation.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/onlineExam_war_exploded/statics/page/teacher/studentInformation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/afterExam.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/afterExam.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/beforeExam.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/beforeExam.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/examing.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/examing.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/studentPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/studentPage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/teacherPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/teacherPage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/page/student/afterExam.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/page/student/afterExam.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/page/student/beforeExam.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/page/student/beforeExam.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/page/student/examing.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/page/student/examing.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/page/student/studentPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/page/student/studentPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/page/teacher/quesManage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/page/teacher/quesManage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/page/teacher/teacherInfomation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/page/teacher/teacherInfomation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cn/online_exam/controller/PaperController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cn/online_exam/dao/PaperDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cn/online_exam/dao/PaperDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cn/online_exam/service/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cn/online_exam/service/AdminService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cn/online_exam/service/impl/AdminServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cn/online_exam/service/impl/AdminServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cn/online_exam/service/impl/TeacherServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cn/online_exam/service/impl/TeacherServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,8 +43,8 @@
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
-    <option name="FILTER_INFO" value="false" />
-    <option name="FILTER_DEBUG" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
@@ -149,7 +75,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/statics/css" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ssm-Online_Examination" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.23950617" />
@@ -162,18 +88,16 @@
       <recent name="com.cn.online_exam.service.impl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\IDEA Projects\onlineExam\src\main\webapp\statics\css" />
-      <recent name="D:\IDEA Projects\onlineExam\src\main\webapp\statics\page" />
       <recent name="D:\IDEA Projects\onlineExam\src\main\webapp\WEB-INF" />
       <recent name="D:\IDEA Projects\onlineExam\src\main\webapp\WEB-INF\libs" />
       <recent name="D:\IDEA Projects\onlineExam\docs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\IDEA Projects\onlineExam\src\main\webapp\jsp" />
-      <recent name="D:\IDEA Projects\onlineExam\src\main\webapp\jsp\student" />
-      <recent name="D:\IDEA Projects\onlineExam\src\main\webapp\jsp\admin" />
-      <recent name="D:\IDEA Projects\onlineExam\src\main\webapp\jsp\teacher" />
       <recent name="D:\IDEA Projects\onlineExam\src\main\webapp" />
+      <recent name="D:\IDEA Projects\onlineExam\src\main\webapp\jsp" />
+      <recent name="D:\IDEA Projects\onlineExam\src\main\webapp\statics" />
+      <recent name="D:\IDEA Projects\onlineExam\src\main\webapp\" />
+      <recent name="D:\IDEA Projects\onlineExam\src\main\webapp\WEB-INF\jsp" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.cn.online_exam.dao" />
@@ -189,19 +113,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -239,11 +150,12 @@
       </method>
     </configuration>
     <configuration name="Tomcat 8.5.60" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.60" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/onlineExam_war/" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="onlineExam:war exploded">
+        <artifact name="onlineExam:war">
           <settings>
-            <option name="CONTEXT_PATH" value="/onlineExam_war_exploded" />
+            <option name="CONTEXT_PATH" value="/onlineExam_war" />
           </settings>
         </artifact>
       </deployment>
@@ -321,7 +233,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="onlineExam:war exploded" />
+          <artifact name="onlineExam:war" />
         </option>
       </method>
     </configuration>
@@ -364,6 +276,8 @@
       <workItem from="1626659379181" duration="17435000" />
       <workItem from="1626693205375" duration="9399000" />
       <workItem from="1626762198356" duration="5897000" />
+      <workItem from="1626828719977" duration="1723000" />
+      <workItem from="1626830739660" duration="205000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1626745921072</created>
@@ -410,7 +324,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="xlxorz-master" />
+                        <option value="origin/master" />
                       </list>
                     </value>
                   </entry>
