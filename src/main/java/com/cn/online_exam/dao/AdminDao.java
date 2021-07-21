@@ -72,6 +72,6 @@ public interface AdminDao {
      * @param administrator 即将更新的信息。
      * @return 返回是否成功。
      */
-    @Insert("insert into admin(adminID, account, password) values(#{adminID}, #{account}, #{password}")
+    @Insert("insert into admin(adminID, account, password) values(#{adminID}, #{account}, #{password})")
     public boolean addAdmin(Administrator administrator);
 }

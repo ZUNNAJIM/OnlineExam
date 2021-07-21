@@ -4,6 +4,7 @@
   Date: 2021/7/20
   Time: 14:54
   To change this template use File | Settings | File Templates.
+  checked！
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -16,7 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rookies在线考试系统</title>
     <!-- 处理默认样式 -->
-    <link rel="stylesheet" href="../statics/reset.css" />
+    <link rel="stylesheet" href="../statics/css/reset.css" />
     <!-- css样式 -->
     <link rel="stylesheet" href="../statics/css/student/afterExam.css" />
     <!-- 引入网页标题图标 -->

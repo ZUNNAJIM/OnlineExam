@@ -4,6 +4,7 @@
   Date: 2021/7/20
   Time: 22:37
   To change this template use File | Settings | File Templates.
+  Checked!!!!!
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!-- 管理员个人信息界面 -->
@@ -36,7 +37,7 @@
 <div class="line"></div>
 
 
-<form action="${pageContext.request.contextPath}/admin/update" name="yyy">
+<form action="${pageContext.request.contextPath}/admin/update" method="post" name="yyy">
 <%--    <% Administrator administrator = (Administrator) request.getAttribute("admin"); %>--%>
     <div class="id">编号： <span id="id">${admin.adminID}</span></div>
     <div class="account">账号： <span id="account">${admin.account}</span>
