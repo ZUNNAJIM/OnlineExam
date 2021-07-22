@@ -1,8 +1,7 @@
 package com.cn.online_exam.pojo;
 
-import org.springframework.format.annotation.DateTimeFormat;
-
 import java.io.Serializable;
+import java.sql.Timestamp;
 import java.util.Date;
 
 public class Paper implements Serializable {
@@ -10,18 +9,19 @@ public class Paper implements Serializable {
     private Integer paperID;
     private String major;
     private String exam_name;
-    @DateTimeFormat(pattern="yyyy-MM-dd")
-    private Date start_time;
-    @DateTimeFormat(pattern="yyyy-MM-dd")
-    private Date end_time;
+    private Date start_date;
+    private Date end_date;
     private Integer exam_time;
 
-    public Paper(Integer paperID, String major, String exam_name, Date start_time, Date end_time, Integer exam_time) {
+    public Paper() {
+        super();
+    }
+    public Paper(Integer paperID, String major, String exam_name, Date start_date, Date end_date, Integer exam_time) {
         this.paperID = paperID;
         this.major = major;
         this.exam_name = exam_name;
-        this.start_time = start_time;
-        this.end_time = end_time;
+        this.start_date = start_date;
+        this.end_date = end_date;
         this.exam_time = exam_time;
     }
 
@@ -49,20 +49,20 @@ public class Paper implements Serializable {
         this.exam_name = exam_name;
     }
 
-    public Date getStart_time() {
-        return start_time;
+    public Date getStart_date() {
+        return start_date;
     }
 
-    public void setStart_time(Date start_time) {
-        this.start_time = start_time;
+    public void setStart_date(Date start_date) {
+        this.start_date = start_date;
     }
 
-    public Date getEnd_time() {
-        return end_time;
+    public Date getEnd_date() {
+        return end_date;
     }
 
-    public void setEnd_time(Date end_time) {
-        this.end_time = end_time;
+    public void setEnd_date(Date end_date) {
+        this.end_date = end_date;
     }
 
     public Integer getExam_time() {
@@ -79,8 +79,8 @@ public class Paper implements Serializable {
                 "paperID=" + paperID +
                 ", major='" + major + '\'' +
                 ", exam_name='" + exam_name + '\'' +
-                ", start_time=" + start_time +
-                ", end_time=" + end_time +
+                ", start_date=" + start_date +
+                ", end_date=" + end_date +
                 ", exam_time=" + exam_time +
                 '}';
     }

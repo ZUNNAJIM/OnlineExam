@@ -1,3 +1,5 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="C" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: zunnajim
@@ -6,9 +8,9 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<!DOCTYPE html>
 <html>
 <head>
+
     <meta charset="utf-8">
     <title>Rookies在线考试系统</title>
     <!-- 处理默认样式 -->
@@ -23,7 +25,6 @@
     <link rel="stylesheet" href="../statics/css/iconfont/iconfont.css">
 </head>
 <body>
-<!-- 侧边栏 -->
 <!-- 侧边栏 -->
 <div id="sidebar">
     <img src="../statics/img/image/logo.png" />
@@ -65,13 +66,23 @@
     <div id="ques-manage">
         <div class="ques-manage-bar">
             <p>科目选择</p>
-            <ul>
-                <li>111</li>
-                <li>222</li>
-            </ul>
+               <c:forEach items="${requestScope.paperList}" var="item" varStatus="status">
+                   <input type="radio" name="major" value="${item.exam_name}" ><label>${item.exam_name}</label>
+               </c:forEach>
             <input type="button" name="add-ques" id="add-ques" value="添加题目" />
         </div>
         <div class="ques-manage-main">
+            <ol>
+                <c:forEach items="${requestScope.stringListHashMap}" var="map" >
+                    <c:when test="${map.key eq 'JAVA-developing'}">
+                        <c:forEach items="${map}" var="item">
+                            <li>${item.toString()}</li>
+                        </c:forEach>
+                    </c:when>
+                    
+                </c:forEach>
+            </ol>
+
             <ul>
                 <li>
                     <span>题目1</span>

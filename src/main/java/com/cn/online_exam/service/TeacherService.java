@@ -14,6 +14,7 @@ public interface TeacherService {
     void insertTeacher(Teacher teacher);
 
     List<Question> findAllQuestion();
+    List<Question> findByExamName(String exam_name);
     void updateQuestion(Question question);
     void insertQuestion(Question question);
     void delQuestion(Integer ID);

@@ -45,6 +45,11 @@ public class TeacherServiceImpl implements TeacherService {
     }
 
     @Override
+    public List<Question> findByExamName(String exam_name) {
+        return questionDao.findExamQuestion(exam_name);
+    }
+
+    @Override
     public void updateQuestion(Question question) {
         questionDao.updateQuestion(question);
     }

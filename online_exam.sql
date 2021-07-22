@@ -164,11 +164,11 @@ INSERT INTO `question` VALUE (2, 1, 'C++基本数据类型不包括：', 'B', 'A
 DROP TABLE IF EXISTS `paper`;
 CREATE TABLE `paper`
 (
-    `paperID` int(11)     NOT NULL,
+    `paperID` int(11)     NOT NULL AUTO_INCREMENT ,
     `major`   varchar(20) NOT NULL,
     `exam_name` varchar(50) NOT NULL ,
-    `start_date` datetime NOT NULL ,
-    `end_date` datetime NOT NULL ,
+    `start_date` date NOT NULL ,
+    `end_date` date NOT NULL ,
     `exam_time` int(11) NOT NULL DEFAULT 60,
     PRIMARY KEY (`paperID`) ,
     UNIQUE (`exam_name`)

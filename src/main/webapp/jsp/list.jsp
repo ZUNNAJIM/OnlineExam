@@ -14,8 +14,8 @@
 <body>
 
 <h3>返回结果</h3>
-<c:forEach items="${paperList}" var="paper">
-  ${paper.toString()}
+<c:forEach items="${requestScope.paperList}" var="paper">
+  ${paper.toString()} <br/>
 </c:forEach>
 
 </body>

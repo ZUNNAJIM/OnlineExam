@@ -25,22 +25,18 @@ public class LogController {
         String password = request.getParameter("password");
         String identity = request.getParameter("identity");
         String nextPage = loginService.login(userName, password, identity);
-//        System.out.println(nextPage);
         HttpSession session = request.getSession();
         session.setAttribute("name",userName);
         session.setAttribute("password",password);
-//        request.setAttribute("name",userName);
-//        request.setAttribute("identity",identity);
-
         return nextPage;
-//        response.sendRedirect(nextPage);
-//        request.getRequestDispatcher("/jsp/"+nextPage+".jsp").forward(request, response);
     }
 
 
     @RequestMapping("logout")
-    public String logout(HttpServletRequest request, HttpServletResponse response)
-    {
+    public String logout(HttpServletRequest request, HttpServletResponse response) {
+        HttpSession session = request.getSession();
+        session.removeAttribute("name");
+        session.removeAttribute("password");
         return "../index";
     }
 }
