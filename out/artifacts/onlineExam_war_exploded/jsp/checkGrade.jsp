@@ -30,8 +30,8 @@
     <img src="../statics/img/image/logo.png" alt="logo">
     <span>我的成绩</span>
     <div class="info">
-        <div class="name">姓名： <span>张三</span> </div>
-        <div class="id">学号： <span>123456</span> </div>
+        <div class="name">姓名： <span>${requestScope.name}</span> </div>
+        <div class="id">学号： <span>${requestScope.studentID}</span> </div>
     </div>
 </div>
 <button class="back"><a href="${pageContext.request.contextPath}/jsp/studentPage.jsp">返回主页</a></button>
@@ -40,10 +40,10 @@
 <div class="line"></div>
 
 <div class="singleGrade">
-    <div class="date">考试时间： <input type="date" value="2021-07-20"> </div>
-    <div class="paperId">试卷编号： <span id="paperId">654321</span> </div>
-    <div class="resultId">成绩编号： <span id="resultId">123</span> </div>
-    <div class="grade">成&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;绩： <span id="grade">98</span>
+    <div class="date">考试时间： <span type="date">${requestScope.examResult.date}</span> </div>
+    <div class="paperId">试卷编号： <span id="paperId">${requestScope.examResult.paperID}</span> </div>
+    <div class="resultId">成绩编号： <span id="resultId">${requestScope.examResult.resultID}</span> </div>
+    <div class="grade">成&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;绩： <span id="grade">${requestScope.examResult.result}</span>
         <button class="checkGrade">
             <a href="${pageContext.request.contextPath}/jsp/checkGrade.jsp">查看详情</a>
         </button>

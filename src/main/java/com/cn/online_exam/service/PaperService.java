@@ -23,7 +23,7 @@ public interface PaperService {
 
     List<ExamResult> findAllResult();
 
-    ExamResultDao findByStudentID(Integer studentID);
+    ExamResult findByStudentID(Integer studentID);
 
     void insertResult(ExamResultDao examResult);
 

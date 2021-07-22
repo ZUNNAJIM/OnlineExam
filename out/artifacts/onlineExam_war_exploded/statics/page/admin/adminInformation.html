@@ -1,4 +1,4 @@
-<!-- 学管理员个人信息界面 -->
+<!-- 管理员个人信息界面 -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +14,7 @@
   <!-- 引入网页标题图标 -->
   <link rel="shortcut icon" href="../../OES_favicon .ico" type="image/x-icon">
   <!-- 引入iconfont图标 -->
-  <link rel="stylesheet" href="../../css/iconfont/iconfont.css">
+  <link rel="stylesheet" href="../statics/css/iconfont/iconfont.css">
 </head>
 
 <body>
@@ -23,15 +23,25 @@
     <div class="identity">身份：管理员</div>
     <span>我的个人信息</span>
   </div>
-  <button class="back"><a href="adminPage.html">返回主页</a></button>
+  <button class="back"><a href="${pageContext.request.contextPath}/jsp/adminPage.jsp">返回主页</a></button>
 
   <!-- 分割线 -->
   <div class="line"></div>
 
-  <form action="#" name="yyy">
-    <div class="id">编号： <span id="id">123456</span> <button class="changeName">修改编号</button> </div>
-    <div class="account">账号： <span id="account">654321</span> <button class="changeAccount">修改账号</button> </div>
-    <div class="pwd">密码： <span id="pwd">654321</span> <button class="changePwd">修改密码</button> </div>
+
+  <form action="${pageContext.request.contextPath}/admin/update" method="post" name="yyy">
+    <!--     Administrator administrator = (Administrator) request.getAttribute("admin"); -->
+    <div class="id">编号： <span id="id">${admin.adminID}</span></div>
+    <div class="account">账号：
+      <span id="account">${admin.account}</span>
+      <span><input type="text" name="new_name" placeholder="新账号"></span>
+      <button type="submit" class="changeAccount">修改账号</button>
+    </div>
+    <div class="pwd">密码：
+      <span id="pwd">${admin.password}</span>
+      <span><input name="new_password" type="text" placeholder="新密码"></span>
+      <button type="submit" class="changePwd">修改密码</button>
+    </div>
   </form>
   <div>
   </div>

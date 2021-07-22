@@ -7,9 +7,8 @@
   NOT CHECKEd!!!
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<!-- 管理员主界面 -->
 
-
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,16 +36,16 @@
 
 <div>
     <form action="${pageContext.request.contextPath}/admin/getInfo" method="post">
-        <div class="jump"><input name="name" value="${name}" type="submit">个人信息管理</div>
+        <div class="jump"><input name="name" value="个人信息管理" type="submit"></div>
     </form>
-    <form name="teach" action="${pageContext.request.contextPath}/admin/getAllTeach" method="post" >
-        <div class="jump"><input type="submit" >教师信息管理</div>
+    <form name="teach" action="${pageContext.request.contextPath}/admin/getAllTeach" method="post">
+        <div class="jump"><input type="submit" value="教师信息管理"></div>
     </form>
     <form action="${pageContext.request.contextPath}/admin/getAllStu" method="post">
-        <div class="jump"><input type="submit">学生信息管理</div>
+        <div class="jump"><input type="submit" value="学生信息管理"></div>
     </form>
     <form action="${pageContext.request.contextPath}/admin/getAllAdmin" method="post">
-        <div class="jump"><input type="submit">管理员信息管理</div>
+        <div class="jump"><input type="submit" value="管理员信息管理"></div>
     </form>
 </div>
 </body>

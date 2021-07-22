@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: zunnajim
@@ -32,31 +33,46 @@
             <h1><span class="iconfont icon-ziyuan143"></span>考试管理</h1>
         </li>
         <li>
-            <a href="${pageContext.request.contextPath}/jsp/teacherPage.jsp">创建考试</a>
+            <form>
+                <input type="submit"
+                       onclick=window.open('http://localhost:8080/onlineExam_war_exploded/jsp/teacherPage.jsp')
+                       value="创建考试">
+            </form>
         </li>
         <li>
-            <a href="${pageContext.request.contextPath}/jsp/questionManage.jsp">题库管理</a>
+            <form method="post" action="${pageContext.request.contextPath}/PaperService/manageQuestion" >
+                <input type="submit" value="题库管理">
+            </form>
         </li>
         <li>
-            <a href="${pageContext.request.contextPath}/jsp/examList.jsp" >考试列表</a>
+            <form action="${pageContext.request.contextPath}/PaperService/getAllPaper" method="post">
+                <input type="submit" value="考试列表">
+            </form>
         </li>
         <li>
-            <h1><span class="iconfont icon-shuju"></span>数据统计</h1>
+            <h1><span class="iconfont icon-shuju">数据统计</span></h1>
         </li>
         <li>
-            <a href="" >考试记录</a>
+            <form action="${pageContext.request.contextPath}/PaperService/examResult" method="post">
+                <input type="submit" value="考试记录">
+            </form>
         </li>
         <li>
-            <a href="${pageContext.request.contextPath}/jsp/studentInfo.jsp" >考生信息</a>
+            <form action="" method="post">
+                <input type="submit" value="考生信息">
+            </form>
         </li>
         <li>
             <h1><span class="iconfont icon-yonghu"></span>个人中心</h1>
         </li>
         <li>
-            <a href="${pageContext.request.contextPath}/jsp/teacherInfo.jsp" >信息管理</a>
+            <form action="${pageContext.request.contextPath}/PaperService/getTeachInfo" method="post">
+                <input type="submit" value="信息管理">
+            </form>
         </li>
     </ul>
 </div>
+
 
 <!-- 版心 -->
 <div id="container">
@@ -64,14 +80,21 @@
     <div id="exam-list">
         <ul class="list-head">
             <li>考试名称</li>
-            <li>考试日期</li>
+            <li>考试开始日期</li>
+            <li>考试结束日期</li>
+            <li>考试时间</li>
             <li>操作</li>
         </ul>
-        <ul class="list-main">
-            <li>111</li>
-            <li>2020-07-20</li>
-            <li><input type="button" name="delete" id="list-delete" value="删除" /></li>
-        </ul>
+        <c:forEach items="${requestScope.paperList}" var="item" varStatus="status">
+            <ul class="list-main">
+                <li>${item.exam_name}</li>
+                <li>${item.start_date}</li>
+                <li>${item.end_date}</li>
+                <li>${item.exam_time}</li>
+                <li><input type="submit" name="delete" id="list-delete" value="${status.index}"/>删除</li>
+            </ul>
+        </c:forEach>
+        </form>
     </div>
 </div>
 </body>

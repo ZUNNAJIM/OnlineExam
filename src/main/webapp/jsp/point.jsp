@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: zunnajim
@@ -7,7 +8,6 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!-- 查看知识点 -->
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -43,75 +43,76 @@
     <!-- 单选题single -->
     <div class="single" id="single">
         <!-- id用于左侧点击跳转 -->
+        <ol>
+        <c:forEach items="${requestScope.pointMap}" var="point">
         <div class="single-item">
-            <div class="question"><span>1</span>. <span class="type">单选</span>中国的英文名是 （ ）。</div>
+            <div class="question"><span>1</span>. <span class="type">单选</span>${point.key}</div>
             <div class="choices">
-                <ul>
-                    <li><input type="radio" checked="true" name="s1">A.China</li>
-                    <li><input type="radio" name="s1">B.England</li>
-                    <li><input type="radio" name="s1">C.china</li>
-                    <li><input type="radio" name="s1">D.America</li>
-                </ul>
+                    <li>知识点：${point.value}</li>
             </div>
+            </c:forEach>
         </div>
-        <div class="single-item">
-            <div class="question"><span>2</span>. <span class="type">单选</span>中国的英文名是 （ ）。</div>
-            <div class="choices">
-                <ul>
-                    <li><input type="radio" checked="true" name="s2">A.China</li>
-                    <li><input type="radio" name="s2">B.England</li>
-                    <li><input type="radio" name="s2">C.china</li>
-                    <li><input type="radio" name="s2">D.America</li>
-                </ul>
-            </div>
-        </div>
+        </ol>
+
     </div>
+<%--        <div class="single-item">--%>
+<%--            <div class="question"><span>2</span>. <span class="type">单选</span>中国的英文名是 （ ）。</div>--%>
+<%--            <div class="choices">--%>
+<%--                <ul>--%>
+<%--                    <li><input type="radio" checked="true" name="s2">A.China</li>--%>
+<%--                    <li><input type="radio" name="s2">B.England</li>--%>
+<%--                    <li><input type="radio" name="s2">C.china</li>--%>
+<%--                    <li><input type="radio" name="s2">D.America</li>--%>
+<%--                </ul>--%>
+<%--            </div>--%>
+<%--        </div>--%>
+<%--    </div>--%>
     <!-- 多选题multiple -->
-    <div class="multiple" id="multiple">
-        <div class="single-item">
-            <div class="question"><span>1</span>. <span class="type">多选</span>面向对象的基本思想有 （ ）。</div>
-            <div class="choices">
-                <ul>
-                    <li><input type="checkbox" checked="true" name="m1">A.封装</li>
-                    <li><input type="checkbox" name="m1">B.集成</li>
-                    <li><input type="checkbox" checked="true" name="m1">C.多态</li>
-                    <li><input type="checkbox" checked="true" name="m1">D.继承</li>
-                </ul>
-            </div>
-        </div>
-        <div class="single-item">
-            <div class="question"><span>2</span>. <span class="type">多选</span>面向对象的基本思想有 （ ）。</div>
-            <div class="choices">
-                <ul>
-                    <li><input type="checkbox" checked="true" name="m2">A.封装</li>
-                    <li><input type="checkbox" name="m2">B.集成</li>
-                    <li><input type="checkbox" checked="true" name="m2">C.多态</li>
-                    <li><input type="checkbox" checked="true" name="m2">D.继承</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+<%--    <div class="multiple" id="multiple">--%>
+<%--        <div class="single-item">--%>
+<%--            <div class="question"><span>1</span>. <span class="type">多选</span>面向对象的基本思想有 （ ）。</div>--%>
+<%--            <div class="choices">--%>
+<%--                <ul>--%>
+<%--                    <li><input type="checkbox" checked="true" name="m1">A.封装</li>--%>
+<%--                    <li><input type="checkbox" name="m1">B.集成</li>--%>
+<%--                    <li><input type="checkbox" checked="true" name="m1">C.多态</li>--%>
+<%--                    <li><input type="checkbox" checked="true" name="m1">D.继承</li>--%>
+<%--                </ul>--%>
+<%--            </div>--%>
+<%--        </div>--%>
+<%--        <div class="single-item">--%>
+<%--            <div class="question"><span>2</span>. <span class="type">多选</span>面向对象的基本思想有 （ ）。</div>--%>
+<%--            <div class="choices">--%>
+<%--                <ul>--%>
+<%--                    <li><input type="checkbox" checked="true" name="m2">A.封装</li>--%>
+<%--                    <li><input type="checkbox" name="m2">B.集成</li>--%>
+<%--                    <li><input type="checkbox" checked="true" name="m2">C.多态</li>--%>
+<%--                    <li><input type="checkbox" checked="true" name="m2">D.继承</li>--%>
+<%--                </ul>--%>
+<%--            </div>--%>
+<%--        </div>--%>
+<%--    </div>--%>
     <!-- 判断题judge -->
-    <div class="judge" id="judge">
-        <div class="single-item">
-            <div class="question"><span>1</span>. <span class="type">判断</span>Java是面向对象的语言。 </span> （ ）</div>
-            <div class="choices">
-                <ul>
-                    <li><input type="radio" checked="true" name="j1">A.对</li>
-                    <li><input type="radio" name="j1">B.错</li>
-                </ul>
-            </div>
-        </div>
-        <div class="single-item">
-            <div class="question"><span>2</span>. <span class="type">判断</span>Java是面向对象的语言。 </span> （ ）</div>
-            <div class="choices">
-                <ul>
-                    <li><input type="radio" checked="true" name="j2">A.对</li>
-                    <li><input type="radio" name="j2">B.错</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+<%--    <div class="judge" id="judge">--%>
+<%--        <div class="single-item">--%>
+<%--            <div class="question"><span>1</span>. <span class="type">判断</span>Java是面向对象的语言。 </span> （ ）</div>--%>
+<%--            <div class="choices">--%>
+<%--                <ul>--%>
+<%--                    <li><input type="radio" checked="true" name="j1">A.对</li>--%>
+<%--                    <li><input type="radio" name="j1">B.错</li>--%>
+<%--                </ul>--%>
+<%--            </div>--%>
+<%--        </div>--%>
+<%--        <div class="single-item">--%>
+<%--            <div class="question"><span>2</span>. <span class="type">判断</span>Java是面向对象的语言。 </span> （ ）</div>--%>
+<%--            <div class="choices">--%>
+<%--                <ul>--%>
+<%--                    <li><input type="radio" checked="true" name="j2">A.对</li>--%>
+<%--                    <li><input type="radio" name="j2">B.错</li>--%>
+<%--                </ul>--%>
+<%--            </div>--%>
+<%--        </div>--%>
+<%--    </div>--%>
 </div>
 </body>
 

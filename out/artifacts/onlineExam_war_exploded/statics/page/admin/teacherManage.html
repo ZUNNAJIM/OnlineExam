@@ -23,28 +23,39 @@
     <div class="identity">身份：管理员</div>
     <span>管理教师信息</span>
   </div>
-  <button class="back"><a href="adminPage.html">返回主页</a></button>
+  <button class="back"><a href="${pageContext.request.contextPath}/jsp/adminPage.jsp">返回主页</a></button>
 
   <!-- 分割线 -->
   <div class="line"></div>
 
-  <div class="search" >
+  <div class="search">
     <input type="text" placeholder="输入账号或编号查询教师信息">
   </div>
 
-  <form action="#" name="tcr1">
-    <div class="id">编号： <span id="id">123456</span> <button class="changeName">修改编号</button> </div>
-    <div class="account">账号： <span id="account">654321</span> <button class="changeAccount">修改账号</button> </div>
-    <div class="pwd">密码： <span id="pwd">654321</span> <button class="changePwd">修改密码</button> </div>
-  </form>
-  <form action="#" name="tcr2">
-    <div class="id">编号： <span id="id">123456</span> <button class="changeName">修改编号</button> </div>
-    <div class="account">账号： <span id="account">654321</span> <button class="changeAccount">修改账号</button> </div>
-    <div class="pwd">密码： <span id="pwd">654321</span> <button class="changePwd">修改密码</button> </div>
-  </form>
-  <div>
-
-  </div>
+<table>
+      <tr class="thead">
+        <td>教师编号</td>
+        <td>教师账号</td>
+        <td>教师密码</td>
+        <td>教师姓名</td>
+        <td>教师性别</td>
+        <td>教师邮箱</td>
+        <td>考试名称</td>
+        <td>点击删除</td>
+      </tr>
+      <c:forEach items="${requestScope.teacherList}" varStatus="status" var="item">
+        <tr>
+          <td>${item.teacherID}</td>
+          <td>${item.account}</td>
+          <td>${item.password}</td>
+          <td>${item.name}</td>
+          <td>${item.gender}</td>
+          <td>${item.mail}</td>
+          <td>${item.exam_name}</td>
+          <td> <input type="submit" class="del" value="${status.index}" name="index"></td>
+        </tr>
+      </c:forEach>
+    </table>
 </body>
 
 </html>

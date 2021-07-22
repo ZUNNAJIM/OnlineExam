@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: zunnajim
@@ -35,24 +36,56 @@
 <!-- 分割线 -->
 <div class="line"></div>
 
-<form action="#" name="yyy">
-    <div class="name">姓名： <span id="name">张三</span> <button class="changeName">修改姓名</button></div>
+<form action="${pageContext.request.contextPath}/studentService/update" name="yyy">
+    <div class="name">
+        姓名： <span id="name">${requestScope.student.name}</span>
+        <span><input type="text" name="new_name"></span>
+        <button class="changeName">修改姓名</button></div>
     <div class="sex">性别：
-        <span>
-        <input type="radio" name="sex">男</input>
-            <input type="radio" name="sex" checked="true">女</input>
-      </span>
+        <c:if test="${requestScope.student.gender ==1}">
+            <span>
+                <input type="radio" name="sex" value="1" checked>男</input>
+                <input type="radio" name="sex" value="2">女</input>
+            </span>
+        </c:if>
+        <c:if test="${requestScope.student.gender ==2}">
+            <span>
+                <input type="radio" name="sex"  value="1">男</input>
+                <input type="radio" name="sex" value="2" checked>女</input>
+            </span>
+        </c:if>
         <button class="changeSex">修改性别</button>
     </div>
-    <div class="id">学号： <span id="id">123456</span> <button class="changeName">修改学号</button> </div>
-    <div class="account">账号： <span id="account">654321</span> <button class="changeAccount">修改账号</button> </div>
-    <div class="pwd">密码： <span id="pwd">654321</span> <button class="changePwd">修改密码</button> </div>
-    <div class="major">专业： <span id="major">软件工程</span> <button class="changeMajor">修改专业</button> </div>
-    <div class="grade">成绩： <span id="grade"></span>
-        <button class="checkGrade">
-        <a href="${pageContext.request.contextPath}/jsp/checkGrade.jsp">查看详情</a>
-        </button>
+    <div class="id">
+        学号： <span id="id">${requestScope.student.studentID}</span>
+        <button class="changeName">修改学号</button>
     </div>
+    <div class="account">
+        账号： <span id="account">${requestScope.student.account}</span>
+        <span><input type="text" name="new_account"></span>
+        <button class="changeAccount">修改账号</button> </div>
+    <div class="pwd">
+        密码： <span id="pwd">${requestScope.student.password}</span>
+        <span><input type="text" name="new_password"></span>
+        <button class="changePwd">修改密码</button> </div>
+    <div class="major">
+        专业： <span id="major">${requestScope.student.major}</span>
+        <span><input type="text" name="new_major"></span>
+        <button class="changeMajor">修改专业</button> </div>
+    <c:if test="${requestScope.student.grade == 0 }">
+        <div class="grade">成绩： <span id="grade"> 无（暂无考试成绩）</span>
+            <button class="checkGrade">
+                <a href="${pageContext.request.contextPath}/jsp/checkGrade.jsp">查看详情</a>
+            </button>
+        </div>
+    </c:if>
+    <c:if test="${requestScope.student.grade != 0}">
+        <div class="grade">成绩： <span id="grade">${requestScope.student.grade}</span>
+            <button class="checkGrade">
+                <a href="${pageContext.request.contextPath}/jsp/checkGrade.jsp">查看详情</a>
+            </button>
+        </div>
+    </c:if>
 </form>
 <div>
 

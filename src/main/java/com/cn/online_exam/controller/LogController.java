@@ -33,10 +33,11 @@ public class LogController {
 
 
     @RequestMapping("logout")
-    public String logout(HttpServletRequest request, HttpServletResponse response) {
+    public String logout(HttpServletRequest request, HttpServletResponse response) throws IOException {
         HttpSession session = request.getSession();
         session.removeAttribute("name");
         session.removeAttribute("password");
+//        response.sendRedirect("../index");
         return "../index";
     }
 }

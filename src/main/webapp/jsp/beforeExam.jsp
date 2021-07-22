@@ -51,8 +51,10 @@
     </ul>
 </div>
 
-<button class="begin"><a href="${pageContext.request.contextPath}/jsp/examing.jsp">确认开始</a></button>
-<button class="back"><a href="${pageContext.request.contextPath}/jsp/studentPage.jsp">返回主页</a></button>
+<form action="${pageContext.request.contextPath}/PaperService/generateExam" method="post">
+    <button type="submit" class="begin">确认开始</button>
+    <button class="back" onclick=window.open('http://localhost:8080/onlineExam_war_exploded/jsp/studentPage.jsp');>返回主页</button>
+</form>
 
 </body>
 </html>

@@ -20,7 +20,7 @@ public interface TeacherDao {
             "gender=#{gender},mail=#{mail},exam_name=#{exam_name} where account=#{account)")
     public boolean updateTeacher(Teacher teacher);
 
-    @Select("select * from teacher where account")
+    @Select("select * from teacher where account=#{account}")
     public Teacher findByAccount(String account);
 
     @Insert("insert into teacher value(teacherID, account, password, name, gender, mail, exam_name) " +

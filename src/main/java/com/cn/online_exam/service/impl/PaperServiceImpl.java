@@ -50,7 +50,7 @@ public class PaperServiceImpl implements PaperService {
     }
 
     @Override
-    public ExamResultDao findByStudentID(Integer studentID) {
+    public ExamResult findByStudentID(Integer studentID) {
         return examResultDao.findByStudentID(studentID);
     }
 

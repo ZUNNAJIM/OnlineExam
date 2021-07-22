@@ -1,6 +1,5 @@
 <!-- 管理员主界面 -->
-<!DOCTYPE html>
-<html lang="en">
+
 
 <head>
   <meta charset="UTF-8">
@@ -22,17 +21,24 @@
     <img src="../../img/image/logo.png" alt="logo">
     <span>管理员主界面</span>
   </div>
-  <button class="exit"><a href="#">退出登录</a></button>
+  <button class="exit"><a href="../index.jsp">退出登录</a></button>
 
   <!-- 分割线 -->
   <div class="line"></div>
 
   <div>
-    <form action="/admin/getInfo" method="post">
-      <div class="jump"><button type="submit" id="id">个人信息管理</button> </a></div>
+    <form action="${pageContext.request.contextPath}/admin/getInfo" method="post">
+      <div class="jump"><input name="name" value="个人信息管理" type="submit"></div>
     </form>
-    <div class="jump"><a href="teacherManagement.html">教师信息管理</a></div>
-    <div class="jump"><a href="studentManagement.html">学生信息管理</a></div>
+    <form name="teach" action="${pageContext.request.contextPath}/admin/getAllTeach" method="post">
+      <div class="jump"><input type="submit" value="教师信息管理"></div>
+    </form>
+    <form action="${pageContext.request.contextPath}/admin/getAllStu" method="post">
+      <div class="jump"><input type="submit" value="学生信息管理"></div>
+    </form>
+    <form action="${pageContext.request.contextPath}/admin/getAllAdmin" method="post">
+      <div class="jump"><input type="submit" value="管理员信息管理"></div>
+    </form>
   </div>
 </body>
 

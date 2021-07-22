@@ -23,7 +23,7 @@ public class AdminServiceImpl implements AdminService {
 
     @Override
     public List<Teacher> findAllTeacher() {
-        return null;
+        return adminDao.findAllTeacher();
     }
 
     @Override
