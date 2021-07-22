@@ -4,7 +4,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("QuestionService")
+@RequestMapping("/QuestionService")
 public class QuestionController {
+
 
 }

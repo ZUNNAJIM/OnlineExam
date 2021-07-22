@@ -1,0 +1,60 @@
+/* 首页公共样式 */
+/* 表单样式 */
+form {
+	position: relative;
+	width: 500px;
+	margin:auto;
+	box-shadow: 0 5px 10px 0px #999999;
+	padding :10px;
+}
+
+/* 表单标题样式 */
+legend {
+	color: #7D9EDB;
+	font-size: 20px;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+p {
+	text-align: center;
+	margin-top: 20px;
+}
+
+form label {
+	display: inline-block;
+	width: 80px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+	width: 250px;
+	height: 36px;
+	border: 1px solid #666666;
+	border-radius: 5px;
+}
+#registerButton{
+	margin-left: 240px;
+}
+
+#registerButton,
+#loginButton {
+	position: relative;
+	width: 100px;
+	font-size: 20px;
+	color: #FFFFFF;
+	border: 1px solid #008dc9;
+	background-color: #008dc9;
+	padding: 5px 20px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+.sex-radio{
+				text-align: left;
+				margin-left: 84px;
+			}
+#registerButton:hover,
+#loginButton:hover {
+	background-color: #00AEF8;
+}
