@@ -15,7 +15,7 @@ public interface ExamResultDao {
     public List<ExamResult> findAllResult();
 
     @Select("select * from exam_result where studentID=#{studentID}")
-    public ExamResultDao findByStudentID(Integer studentID);
+    public ExamResult findByStudentID(Integer studentID);
 
 
     @Insert("insert into exam_result(resultID, studentID, paperID, date, result) " +

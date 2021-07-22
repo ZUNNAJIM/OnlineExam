@@ -51,7 +51,9 @@
     </ul>
 </div>
 
-<button class="begin"><a href="${pageContext.request.contextPath}/jsp/examing.jsp">确认开始</a></button>
+<form action="${pageContext.request.contextPath}/PaperService/generateExam" method="post">
+    <button type="submit" class="begin">确认开始</button>
+</form>
 <button class="back"><a href="${pageContext.request.contextPath}/jsp/studentPage.jsp">返回主页</a></button>
 
 </body>

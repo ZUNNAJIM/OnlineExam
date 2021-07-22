@@ -89,7 +89,7 @@ button a {
 }
 
 form {
-  margin: 30px 360px;
+  margin: 30px 300px;
   padding: 40px 60px;
   border: 6px solid rgb(219, 232, 248);
   border-radius: 20px;
@@ -114,23 +114,8 @@ form button:hover {
   font-weight: 800;
 }
 
-.id,
-.account,
-.pwd {
-  position: relative;
-  border: 1px dotted #ccc;
-  border-radius: 5px;
-  margin: 10px;
-  padding: 5px;
-  height: 28px;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 28px;
-  color: rgb(103, 92, 179);
-}
-
 table {
-  margin: 20px auto;
+  margin: 20px;
   padding: 10px;
   border: 5px solid rgb(153, 177, 243);
   border-radius: 10px;
@@ -139,7 +124,6 @@ table {
 td {
   border: 1px solid #eee;
   padding: 5px;
-  text-align: center;
 }
 
 .del {

@@ -3,7 +3,9 @@ package com.cn.online_exam.controller;
 import com.cn.online_exam.pojo.ExamResult;
 import com.cn.online_exam.pojo.Paper;
 import com.cn.online_exam.pojo.Question;
+import com.cn.online_exam.pojo.Student;
 import com.cn.online_exam.service.PaperService;
+import com.cn.online_exam.service.StudentService;
 import com.cn.online_exam.service.TeacherService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -29,6 +31,9 @@ public class TeacherController {
 
     @Autowired
     private TeacherService teacherService;
+
+    @Autowired
+    private StudentService studentService;
 
 
     @RequestMapping("/addPaper")
@@ -89,6 +94,28 @@ public class TeacherController {
         List<ExamResult> examResults = paperService.findAllResult();
         request.setAttribute("examResults", examResults);
         return "examNotes";
+    }
+
+
+    @RequestMapping("/generateExam")
+    public String generateExam(HttpServletRequest request,HttpServletResponse response) {
+        String name = (String) request.getSession().getAttribute("name");
+        System.out.println(name);
+        Student student = studentService.findByAccount(name);
+        String major = student.getMajor();
+        System.out.println(major);
+        List<Paper> paperList = paperService.findAllPaper();
+        String exam_name = null;
+        for (Paper paper:paperList) {
+            if(paper.getMajor().equalsIgnoreCase(major)) {
+                System.out.println(paper.getMajor());
+                exam_name = paper.getExam_name();
+            }
+        }
+        List<Question> questionList = teacherService.findByExamName(exam_name);
+        System.out.println(questionList.toString());
+        request.setAttribute("questionList", questionList);
+        return "examing";
     }
 
 

@@ -8,8 +8,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!-- 管理员个人信息界面 -->
-<%--<!DOCTYPE html>--%>
-<%--<html lang="en">--%>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -38,14 +37,18 @@
 
 
 <form action="${pageContext.request.contextPath}/admin/update" method="post" name="yyy">
-<%--    <% Administrator administrator = (Administrator) request.getAttribute("admin"); %>--%>
+    <!--     Administrator administrator = (Administrator) request.getAttribute("admin"); -->
     <div class="id">编号： <span id="id">${admin.adminID}</span></div>
-    <div class="account">账号： <span id="account">${admin.account}</span>
-        <span><input  type="text" name="new_name" placeholder="新账号"></span>
-        <button type="submit" class="changeAccount">修改账号</button> </div>
-    <div class="pwd">密码： <span id="pwd">${admin.password}</span>
+    <div class="account">账号：
+        <span id="account">${admin.account}</span>
+        <span><input type="text" name="new_name" placeholder="新账号"></span>
+        <button type="submit" class="changeAccount">修改账号</button>
+    </div>
+    <div class="pwd">密码：
+        <span id="pwd">${admin.password}</span>
         <span><input name="new_password" type="text" placeholder="新密码"></span>
-        <button type="submit" class="changePwd">修改密码</button> </div>
+        <button type="submit" class="changePwd">修改密码</button>
+    </div>
 </form>
 <div>
 </div>

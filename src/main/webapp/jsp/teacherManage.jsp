@@ -8,7 +8,6 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!-- 管理员对教师信息管理界面 -->
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -37,41 +36,34 @@
 <!-- 分割线 -->
 <div class="line"></div>
 
-<div class="search" >
+<div class="search">
     <input type="text" placeholder="输入账号或编号查询教师信息">
 </div>
 
-<div class="id">
-<form action="" method="post">
-    <table border="1">
-        <c:forEach items="${requestScope.teacherList}" varStatus="status" var="item">
-            <tr>
-                <td>${item.teacherID}</td>
-                <td>${item.account}</td>
-                <td>${item.password}</td>
-                <td>${item.name}</td>
-                <td>${item.gender}</td>
-                <td>${item.mail}</td>
-                <td>${item.exam_name}</td>
-                <td> <input type="submit" value="${status.index}" name="index" >删除</td>
-            </tr>
-        </c:forEach>
-    </table>
-</form>
-</div>
-<%--<form action="#" name="tcr1">--%>
-<%--    <div class="id">编号： <span id="id">${teacherList[0].teacherID}</span> <button class="changeName">修改编号</button> </div>--%>
-<%--    <div class="account">账号： <span id="account">${teacherList[0].account}</span> <button class="changeAccount">修改账号</button> </div>--%>
-<%--    <div class="pwd">密码： <span id="pwd">${teacherList[0].password}</span> <button class="changePwd">修改密码</button> </div>--%>
-<%--</form>--%>
-<%--<form action="#" name="tcr2">--%>
-<%--    <div class="id">编号： <span id="id">${teacherList[1].teacherID}</span> <button class="changeName">修改编号</button> </div>--%>
-<%--    <div class="account">账号： <span id="account">${teacherList[1].account}</span> <button class="changeAccount">修改账号</button> </div>--%>
-<%--    <div class="pwd">密码： <span id="pwd">${teacherList[1].password}</span> <button class="changePwd">修改密码</button> </div>--%>
-<%--</form>--%>
-<div>
-
-</div>
+<table>
+    <tr class="thead">
+        <td>教师编号</td>
+        <td>教师账号</td>
+        <td>教师密码</td>
+        <td>教师姓名</td>
+        <td>教师性别</td>
+        <td>教师邮箱</td>
+        <td>考试名称</td>
+        <td>点击删除</td>
+    </tr>
+    <c:forEach items="${requestScope.teacherList}" varStatus="status" var="item">
+        <tr>
+            <td>${item.teacherID}</td>
+            <td>${item.account}</td>
+            <td>${item.password}</td>
+            <td>${item.name}</td>
+            <td>${item.gender}</td>
+            <td>${item.mail}</td>
+            <td>${item.exam_name}</td>
+            <td> <input type="submit" class="del" value="${status.index}" name="index"></td>
+        </tr>
+    </c:forEach>
+</table>
 </body>
 
 </html>

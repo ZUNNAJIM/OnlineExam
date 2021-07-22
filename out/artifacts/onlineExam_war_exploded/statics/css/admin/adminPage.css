@@ -49,9 +49,9 @@ button a {
 
 .jump {
   float: left;
-  margin: 100px 100px;
-  height: 100px;
-  width: 200px;
+  margin: 100px 36px;
+  height: 80px;
+  padding: 20px;
   background-color: rgb(138, 176, 248);
   border: 3px solid #ccc;
   border-radius: 15px;
@@ -59,8 +59,15 @@ button a {
   line-height: 100px;
 }
 
-.jump a {
+.jump input {
+  border: 0;
   color: rgb(103, 89, 163);
+  background-color: rgb(138, 176, 248);
+  line-height: 80px;
   font-size: 28px;
   font-weight: 700;
+}
+
+.jump input:hover {
+  color: darkslateblue;
 }

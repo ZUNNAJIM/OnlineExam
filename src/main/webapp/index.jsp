@@ -30,16 +30,16 @@
     <legend>账号登录</legend>
     <p id="identity-radio">
         <input type="radio" name="identity" value="admin"  /><label>管理员</label>
-        <input type="radio" name="identity" value="teacher" checked /><label>教师</label>
-        <input type="radio" name="identity" value="student" /><label>学生</label>
+        <input type="radio" name="identity" value="teacher"  /><label>教师</label>
+        <input type="radio" name="identity" value="student" checked /><label>学生</label>
     </p>
     <p>
         <label>用户名：</label>
-        <input type="text" id="userName" name="name" value="teach01" placeholder="请输入账号" />
+        <input type="text" id="userName" name="name" value="stu01" placeholder="请输入账号" />
     </p>
     <p>
         <label>密&nbsp;&nbsp;&nbsp;码：</label>
-        <input type="password" id="userPwd" name="password" value="teach01" placeholder="请输入密码" />
+        <input type="password" id="userPwd" name="password" value="stu01" placeholder="请输入密码" />
     </p>
     <p>
         <input type="submit" id="loginButton" value="登录" />

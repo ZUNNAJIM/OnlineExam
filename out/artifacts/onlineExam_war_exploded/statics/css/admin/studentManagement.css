@@ -132,3 +132,28 @@ form button:hover {
   color: rgb(103, 92, 179);
 }
 
+table {
+  margin: 20px auto;
+  padding: 10px;
+  border: 5px solid rgb(153, 177, 243);
+  border-radius: 10px;
+}
+
+td {
+  border: 1px solid #eee;
+  padding: 5px;
+  text-align: center;
+}
+
+.del {
+  color: rgba(0, 0, 0, 0);
+  background-color: rgb(149, 211, 252);
+  border: 2px solid #999;
+  border-radius: 4px;
+  width: 56px;
+  margin: 5px;
+}
+
+.del:hover {
+  background-color: rgb(115, 115, 235);
+}
