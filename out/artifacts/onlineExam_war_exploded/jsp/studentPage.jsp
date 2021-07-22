@@ -32,13 +32,17 @@
     <img src="../statics/img/image/logo.png" alt="logo">
     <span>学生主界面</span>
 </div>
-<button class="exit"><a href="#">退出登录</a></button>
+<form action="${pageContext.request.contextPath}/LogService/logout" method="post">
+    <button class="exit" type="submit">退出登录</button>
+</form>
 
 <!-- 分割线 -->
 <div class="line"></div>
 
 <div>
-    <div class="jump"><a href="${pageContext.request.contextPath}/jsp/beforeExam.jsp">参加考试</a></div>
+    <form method="post" action="${pageContext.request.contextPath}/studentService/getPoint">
+        <input class="jump" onclick=window.open('http://localhost:8080/onlineExam_war_exploded/jsp/beforeExam.jsp'); type="submit" value="参加考试"/>
+    </form>
     <form method="post" action="${pageContext.request.contextPath}/studentService/getPoint">
         <input class="jump" type="submit" value="查看知识点"/>
     </form>

@@ -24,7 +24,6 @@
 </head>
 <body>
 <!-- 侧边栏 -->
-<!-- 侧边栏 -->
 <div id="sidebar">
     <img src="../statics/img/image/logo.png" />
     <ul>
@@ -32,7 +31,11 @@
             <h1><span class="iconfont icon-ziyuan143"></span>考试管理</h1>
         </li>
         <li>
-            <a href="">创建考试</a>
+            <form>
+                <input type="submit"
+                       onclick=window.open('http://localhost:8080/onlineExam_war_exploded/jsp/teacherPage.jsp')
+                       value="创建考试">
+            </form>
         </li>
         <li>
             <form method="post" action="${pageContext.request.contextPath}/PaperService/manageQuestion" >
@@ -45,12 +48,10 @@
             </form>
         </li>
         <li>
-            <form action="" method="post">
-                <input type="submit" value="数据统计">
-            </form>
+            <h1><span class="iconfont icon-shuju">数据统计</span></h1>
         </li>
         <li>
-            <form action="" method="post">
+            <form action="${pageContext.request.contextPath}/PaperService/examResult" method="post">
                 <input type="submit" value="考试记录">
             </form>
         </li>
@@ -63,7 +64,9 @@
             <h1><span class="iconfont icon-yonghu"></span>个人中心</h1>
         </li>
         <li>
-            <a href="${pageContext.request.contextPath}/jsp/teacherInfo.jsp" >信息管理</a>
+            <form action="${pageContext.request.contextPath}/PaperService/getTeachInfo" method="post">
+                <input type="submit" value="信息管理">
+            </form>
         </li>
     </ul>
 </div>

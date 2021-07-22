@@ -27,6 +27,7 @@
 </head>
 
 <body>
+
 <div class="left">
     <img src="../statics/img/image/logo.png" alt="logo">
     <span class="title">期末考试</span>
@@ -38,7 +39,7 @@
     </div>
     <div class="line"></div>
     <div class="sums">已完成  <span class="finished">20</span> / <span class="total"> 50</span></div>
-    <div class="time">本次考试还剩 20：30</div>
+    <div class="time">本次考试还剩 <span class="min"></span>：<span class="sec"></span></div>
     <button class="finish">
         <a href="${pageContext.request.contextPath}/jsp/afterExam.jsp">提前交卷</a>
     </button>
@@ -119,7 +120,22 @@
 <%--        </div>--%>
     </div>
 </form>
-
+<script>
+    var minute = document.querySelector('.min');
+    var second = document.querySelector('.sec');
+    minute.innerHTML = 120;   // 设定初始值
+    second.innerHTML = 0;
+    var t = setInterval(function() {
+        second.innerHTML--;
+        if(minute.innerHTML == 0 && second.innerHTML == 0) {
+            clearInterval(t);
+        }
+        if(second.innerHTML < 0) {
+            minute.innerHTML--;
+            second.innerHTML = 59;
+        }
+    }, 1000);
+  </script>
 
 </body>
 

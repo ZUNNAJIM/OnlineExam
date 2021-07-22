@@ -62,7 +62,11 @@
             <h1><span class="iconfont icon-ziyuan143"></span>考试管理</h1>
         </li>
         <li>
-            <a href="">创建考试</a>
+            <form>
+                <input type="submit"
+                       onclick=window.open('http://localhost:8080/onlineExam_war_exploded/jsp/teacherPage.jsp')
+                       value="创建考试">
+            </form>
         </li>
         <li>
             <form method="post" action="${pageContext.request.contextPath}/PaperService/manageQuestion" >
@@ -75,9 +79,7 @@
             </form>
         </li>
         <li>
-            <form action="" method="post">
-                <input type="submit" value="数据统计">
-            </form>
+            <h1><span class="iconfont icon-shuju">数据统计</span></h1>
         </li>
         <li>
             <form action="${pageContext.request.contextPath}/PaperService/examResult" method="post">
@@ -93,7 +95,9 @@
             <h1><span class="iconfont icon-yonghu"></span>个人中心</h1>
         </li>
         <li>
-            <a href="${pageContext.request.contextPath}/jsp/teacherInfo.jsp" >信息管理</a>
+            <form action="${pageContext.request.contextPath}/PaperService/getTeachInfo" method="post">
+                <input type="submit" value="信息管理">
+            </form>
         </li>
     </ul>
 </div>
@@ -106,7 +110,6 @@
     <div id="create-exam">
         <ul class="tab">
             <li id="paper" class="active"><span class="iconfont icon-guizeshuoming"></span>试卷设置</li>
-            <li id="timu"><span class="iconfont icon-kaoshi"></span></li>
         </ul>
         <!-- 试卷设置 -->
         <form action="${pageContext.request.contextPath}/PaperService/addPaper" method="post">
@@ -133,111 +136,10 @@
                 <div>
                     <label class="iconfont icon-guizeshuoming">考试说明：</label><br />
                     <textarea rows="10" cols="120" style="resize: none;"></textarea><br />
-                    <input id="save-btn" type="submit" value="保存并进入下一步" />
+                    <input id="save-btn" type="submit" value="保存考试" style="width: 150px;height: 36px;" />
                 </div>
             </div>
         </form>
-
-
-
-        <!-- 题目设置 -->
-<%--        <div id="topical">--%>
-<%--            <div class="left-bar">--%>
-<%--                <!-- 左侧题目类型选择栏 -->--%>
-<%--                <p class="iconfont icon-kaoshitiliang">选择添加以下题型</p>--%>
-<%--                <ul>--%>
-<%--                    <li class="iconfont icon-icon-">单选题</li>--%>
-<%--                    <li class="iconfon icon-w_duoxuanti">多选题</li>--%>
-<%--                    <li class="iconfont icon-panduanti">判断题</li>--%>
-<%--                </ul>--%>
-<%--                <!-- 左侧题目快速定位栏 -->--%>
-<%--                <div class="guide">--%>
-<%--                    <p class="iconfont icon-zhuce">快速定位</p>--%>
-<%--                    <span>1</span>--%>
-<%--                    <span>1</span>--%>
-<%--                    <span>1</span>--%>
-<%--                    <span>1</span>--%>
-<%--                    <span>1</span>--%>
-<%--                </div>--%>
-<%--            </div>--%>
-
-<%--            <!-- 试卷浏览部分 -->--%>
-<%--            <div class="shiti">--%>
-<%--                <!-- 单选题 -->--%>
-<%--                <div class="unit">--%>
-<%--                    <div class="timu-header">--%>
-<%--                        <span><i>1</i>【<i>单选题</i>】</span>--%>
-<%--                        <span class="iconfont icon-shanchu"></span>--%>
-<%--                        <input id="subScore" type="button" value="-" />--%>
-<%--                        <input id="score" type="text" value="1" />--%>
-<%--                        <input id="addScore" type="button" value="+" />--%>
-<%--                    </div>--%>
-<%--                    <div class="timu-title">--%>
-<%--                        <textarea cols="90" rows="5" placeholder="点击输入题目"></textarea>--%>
-<%--                    </div>--%>
-<%--                    <div class="option">--%>
-<%--                        <input type="radio" name="one" id="one" value="选项" /><label>选项</label><br />--%>
-<%--                        <input type="radio" name="one" id="one" value="选项" /><label>选项</label><br />--%>
-<%--                        <input type="radio" name="one" id="one" value="选项" /><label>选项</label><br />--%>
-<%--                        <input type="radio" name="one" id="one" value="选项" /><label>选项</label>--%>
-<%--                    </div>--%>
-<%--                    <div class="answer">--%>
-<%--                        <textarea cols="90" rows="5" placeholder="请输入试题解析"></textarea>--%>
-<%--                    </div>--%>
-<%--                </div>--%>
-<%--                <!-- 多选题 -->--%>
-<%--                <div class="mco">--%>
-<%--                    <div class="timu-header">--%>
-<%--                        <span><i>2</i>【<i>多选题</i>】</span>--%>
-<%--                        <span class="iconfont icon-shanchu"></span>--%>
-<%--                        <input id="subScore" type="button" value="-" />--%>
-<%--                        <input id="score" type="text" value="1" />--%>
-<%--                        <input id="addScore" type="button" value="+" />--%>
-<%--                    </div>--%>
-<%--                    <div class="timu-title">--%>
-<%--                        <textarea cols="90" rows="5" placeholder="点击输入题目"></textarea>--%>
-<%--                    </div>--%>
-<%--                    <div class="option">--%>
-<%--                        <input type="checkbox" name="two" id="two" value="选项" /><label>选项</label><br />--%>
-<%--                        <input type="checkbox" name="two" id="two" value="选项" /><label>选项</label><br />--%>
-<%--                        <input type="checkbox" name="two" id="two" value="选项" /><label>选项</label><br />--%>
-<%--                        <input type="checkbox" name="two" id="two" value="选项" /><label>选项</label>--%>
-<%--                    </div>--%>
-<%--                    <div class="answer">--%>
-<%--                        <textarea cols="90" rows="5" placeholder="请输入试题解析"></textarea>--%>
-<%--                    </div>--%>
-<%--                </div>--%>
-<%--                <div class="judge">--%>
-<%--                    <div class="timu-header">--%>
-<%--                        <span><i>3</i>【<i>判断题</i>】</span>--%>
-<%--                        <span class="iconfont icon-shanchu"></span>--%>
-<%--                        <input id="subScore" type="button" value="-" />--%>
-<%--                        <input id="score" type="text" value="1" />--%>
-<%--                        <input id="addScore" type="button" value="+" />--%>
-<%--                    </div>--%>
-<%--                    <div class="timu-title">--%>
-<%--                        <textarea cols="90" rows="5" placeholder="点击输入题目"></textarea>--%>
-<%--                    </div>--%>
-<%--                    <div class="option">--%>
-<%--                        <input type="radio" name="three" id="three" value="对" /><label>对</label><br />--%>
-<%--                        <input type="radio" name="three" id="three" value="错" /><label>错</label>--%>
-<%--                    </div>--%>
-<%--                    <div class="answer">--%>
-<%--                        <textarea cols="90" rows="5" placeholder="请输入试题解析"></textarea>--%>
-<%--                    </div>--%>
-<%--                </div>--%>
-<%--            </div>--%>
-<%--            <!-- 右侧试题概况 -->--%>
-<%--            <div class="right-bar">--%>
-<%--                <p class="iconfont icon-gaikuang">试题概况</p>--%>
-<%--                <ul>--%>
-<%--                    <li>题目总数：<span>0</span>题</li>--%>
-<%--                    <li>题目总分：<span>0</span>分</li>--%>
-<%--                </ul>--%>
-<%--                <input type="button" value="发布考试" />--%>
-<%--            </div>--%>
-
-<%--        </div>--%>
 
     </div>
 </div>

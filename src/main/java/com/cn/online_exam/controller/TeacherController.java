@@ -1,9 +1,6 @@
 package com.cn.online_exam.controller;
 
-import com.cn.online_exam.pojo.ExamResult;
-import com.cn.online_exam.pojo.Paper;
-import com.cn.online_exam.pojo.Question;
-import com.cn.online_exam.pojo.Student;
+import com.cn.online_exam.pojo.*;
 import com.cn.online_exam.service.PaperService;
 import com.cn.online_exam.service.StudentService;
 import com.cn.online_exam.service.TeacherService;
@@ -40,8 +37,8 @@ public class TeacherController {
     public String addPaper(HttpServletRequest request, HttpServletResponse response) throws ParseException {
         String exam_name = request.getParameter("exam_name");
         String major = request.getParameter("major");
-        String  start_date = request.getParameter("start_date");
-        String  end_date = request.getParameter("end_date");
+        String start_date = request.getParameter("start_date");
+        String end_date = request.getParameter("end_date");
         Integer exam_time = Integer.valueOf(request.getParameter("exam_time"));
         System.out.println(exam_name);
         System.out.println(major);
@@ -52,7 +49,7 @@ public class TeacherController {
                 simpleDateFormat.parse(end_date), exam_time);
         paperService.insertPaper(paper);
         List<Paper> paperList = paperService.findAllPaper();
-        request.setAttribute("paperList" , paperList);
+        request.setAttribute("paperList", paperList);
         // TODO
         return "list";
     }
@@ -61,12 +58,12 @@ public class TeacherController {
     public String manageQuestion(HttpServletRequest request, HttpServletResponse response) {
         List<Paper> paperList = paperService.findAllPaper();
         request.setAttribute("paperList", paperList);
-        HashMap<String , List<Question>> stringListHashMap = new HashMap<>();
+        HashMap<String, List<Question>> stringListHashMap = new HashMap<>();
         for (Paper paper : paperList) {
             String exam_name = paper.getExam_name();
             List<Question> questionList = teacherService.findByExamName(exam_name);
             System.out.println(questionList.size());
-            stringListHashMap.put(exam_name,questionList);
+            stringListHashMap.put(exam_name, questionList);
         }
         request.setAttribute("stringListHashMap", stringListHashMap);
         System.out.println(paperList.size());
@@ -98,16 +95,15 @@ public class TeacherController {
 
 
     @RequestMapping("/generateExam")
-    public String generateExam(HttpServletRequest request,HttpServletResponse response) {
+    public String generateExam(HttpServletRequest request, HttpServletResponse response) {
         String name = (String) request.getSession().getAttribute("name");
-        System.out.println(name);
         Student student = studentService.findByAccount(name);
         String major = student.getMajor();
         System.out.println(major);
         List<Paper> paperList = paperService.findAllPaper();
         String exam_name = null;
-        for (Paper paper:paperList) {
-            if(paper.getMajor().equalsIgnoreCase(major)) {
+        for (Paper paper : paperList) {
+            if (paper.getMajor().equalsIgnoreCase(major)) {
                 System.out.println(paper.getMajor());
                 exam_name = paper.getExam_name();
             }
@@ -118,5 +114,36 @@ public class TeacherController {
         return "examing";
     }
 
+
+    @RequestMapping("/getTeachInfo")
+    public String getTeachInfo(HttpServletRequest request, HttpServletResponse response) {
+        String name = (String) request.getSession().getAttribute("name");
+        System.out.println(name);
+        Teacher teacher = teacherService.findByAccount(name);
+        System.out.println(teacher.toString());
+        request.setAttribute("teacher", teacher);
+        return "teacherInfo";
+    }
+
+
+    @RequestMapping("/updateTeachInfo")
+    public String updateTeachInfo(HttpServletRequest request, HttpServletResponse response) {
+        String new_account = request.getParameter("new_account");
+        Teacher old_teacher = teacherService.findByAccount((String) request.getSession().getAttribute("name"));
+        String new_password = request.getParameter("new_password");
+        String new_name = request.getParameter("new_name");
+        Integer gender = request.getParameter("gender").equals("男") ? 1:2;
+        String new_mail = request.getParameter("new_mail");
+        String new_exam_name=request.getParameter("new_exam_name");
+        Teacher teacher = new Teacher(old_teacher.getTeacherID(),
+                new_account==null? old_teacher.getAccount():new_account,
+                new_password == null?old_teacher.getPassword():new_password,
+                new_name ==new_exam_name ? old_teacher.getName():new_name,
+                gender,
+                new_mail == null? old_teacher.getMail() :new_mail,
+                new_exam_name == new_name ?old_teacher.getExam_name():new_exam_name);
+        teacherService.updateTeacher(teacher);
+        return "../success";
+    }
 
 }
