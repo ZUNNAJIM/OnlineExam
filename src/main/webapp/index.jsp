@@ -14,6 +14,10 @@
     <!-- 引入网页标题图标 -->
     <link rel="shortcut icon" href="./statics/OES_favicon%20.ico" type="image/x-icon">
     <style type="text/css">
+        /*body{*/
+        /*    min-height: 700px;*/
+        /*    background-image: url(./statics/img/image/bg.png);*/
+        /*}*/
         #loginForm{
             margin-top: 160px;
         }

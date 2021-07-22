@@ -27,7 +27,7 @@ public interface QuestionDao {
     @Insert("insert into question(ID, questionID, question, answer, option_a, " +
             "option_b, option_c, option_d, analysis, point, difficulty, exam_name) " +
             "values(#{ID}, #{questionID}, #{question}, #{answer}, #{option_a}, #{option_b}, " +
-            "#{option_c}, #{option_d}, #{analysis}, #{point}, #{difficulty}, #{exam_name}")
+            "#{option_c}, #{option_d}, #{analysis}, #{point}, #{difficulty}, #{exam_name})")
     public boolean insertQuestion(Question question);
 
     @Delete("delete from question where ID=#{ID}")

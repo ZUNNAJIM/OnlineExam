@@ -41,6 +41,7 @@
 </div>
 
 <table>
+    <form action="${pageContext.request.contextPath}/admin/delTaech" method="post">
     <tr class="thead">
         <td>教师编号</td>
         <td>教师账号</td>
@@ -63,6 +64,7 @@
             <td> <input type="submit" class="del" value="${status.index}" name="index"></td>
         </tr>
     </c:forEach>
+    </form>
 </table>
 </body>
 

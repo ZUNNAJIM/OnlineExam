@@ -58,7 +58,7 @@
             </form>
         </li>
         <li>
-            <form action="" method="post">
+            <form action="${pageContext.request.contextPath}/PaperService/getAllStu" method="post">
                 <input type="submit" value="考生信息">
             </form>
         </li>
@@ -85,15 +85,16 @@
             <li>考试时间</li>
             <li>操作</li>
         </ul>
-        <c:forEach items="${requestScope.paperList}" var="item" varStatus="status">
-            <ul class="list-main">
-                <li>${item.exam_name}</li>
-                <li>${item.start_date}</li>
-                <li>${item.end_date}</li>
-                <li>${item.exam_time}</li>
-                <li><input type="submit" name="delete" id="list-delete" value="${status.index}"/>删除</li>
-            </ul>
-        </c:forEach>
+        <form action="${pageContext.request.contextPath}/PaperService/delPaper" method="post">
+            <c:forEach items="${requestScope.paperList}" var="item" varStatus="status">
+                <ul class="list-main">
+                    <li>${item.exam_name}</li>
+                    <li>${item.start_date}</li>
+                    <li>${item.end_date}</li>
+                    <li>${item.exam_time}</li>
+                    <li><input type="submit" name="delete" id="list-delete" value="${status.index}"/>删除</li>
+                </ul>
+            </c:forEach>
         </form>
     </div>
 </div>

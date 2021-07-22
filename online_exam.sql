@@ -154,7 +154,7 @@ CREATE TABLE `question`
 -- -------------------------------------
 INSERT INTO `question` VALUE (1, 1, 'JAVA所定义的版本中不包括：', 'D', 'A、JAVA2 EE', 'B、 JAVA2 Card', 'C、 JAVA2 ME', 'D、JAVA2 HE', '无', 'java基础知识', 'easy', 'JAVA-developing');
 INSERT INTO `question` VALUE (2, 2,'假定AB为一个类，则执行 “AB ab = new AB(a,5);”语句时将自动调用该类的:','A','A.带参构造函数','B.无参构造函数','C.拷贝构造函数','D.重载赋值运算','无', 'java基础知识', 'easy', 'JAVA-developing');
-INSERT INTO `question` VALUE (3, 2, '导出类调用基类的构造器必须用到的关键字：', 'C', 'A. this ', 'B.final', 'C.super ', 'D.static', '无', 'java基础知识', 'easy', 'JAVA-developing');
+INSERT INTO `question` VALUE (3, 3, '导出类调用基类的构造器必须用到的关键字：', 'C', 'A. this ', 'B.final', 'C.super ', 'D.static', '无', 'java基础知识', 'easy', 'JAVA-developing');
 INSERT INTO `question` VALUE (4, 1, 'C++基本数据类型不包括：', 'B', 'A、int', 'B、struct', 'C、double', 'D、char', 'C++基本数据类型', '略', 'easy', 'C++-developing');
 
 

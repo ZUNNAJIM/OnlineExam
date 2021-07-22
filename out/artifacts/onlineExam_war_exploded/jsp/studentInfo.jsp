@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: zunnajim
@@ -56,7 +57,7 @@
             </form>
         </li>
         <li>
-            <form action="" method="post">
+            <form action="${pageContext.request.contextPath}/PaperService/getAllStu" method="post">
                 <input type="submit" value="考生信息">
             </form>
         </li>
@@ -81,25 +82,19 @@
             <li>学号</li>
             <li>姓名</li>
             <li>性别</li>
-            <li>年级</li>
+            <li>成绩</li>
             <li>专业</li>
         </ul>
-        <ul class="stu-main">
-            <li>001</li>
-            <li>001</li>
-            <li>张三</li>
-            <li>男</li>
-            <li>2018</li>
-            <li>计算机</li>
-        </ul>
-        <ul class="stu-main">
-            <li>001</li>
-            <li>001</li>
-            <li>张三</li>
-            <li>男</li>
-            <li>2018</li>
-            <li>计算机</li>
-        </ul>
+        <c:forEach items="${requestScope.studentList}" var="student">
+            <ul class="stu-main">
+                <li>${student.account}</li>
+                <li>${student.studentID}</li>
+                <li>${student.name}</li>
+                <li>${student.gender}</li>
+                <li>${student.grade}</li>
+                <li>${student.major}</li>
+            </ul>
+        </c:forEach>
     </div>
 </div>
 </body>

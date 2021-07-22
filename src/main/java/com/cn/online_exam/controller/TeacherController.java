@@ -31,6 +31,8 @@ public class TeacherController {
 
     @Autowired
     private StudentService studentService;
+    private HttpServletRequest request;
+    private HttpServletResponse response;
 
 
     @RequestMapping("/addPaper")
@@ -51,23 +53,16 @@ public class TeacherController {
         List<Paper> paperList = paperService.findAllPaper();
         request.setAttribute("paperList", paperList);
         // TODO
-        return "list";
+        return "../success";
     }
 
     @RequestMapping("/manageQuestion")
     public String manageQuestion(HttpServletRequest request, HttpServletResponse response) {
-        List<Paper> paperList = paperService.findAllPaper();
-        request.setAttribute("paperList", paperList);
-        HashMap<String, List<Question>> stringListHashMap = new HashMap<>();
-        for (Paper paper : paperList) {
-            String exam_name = paper.getExam_name();
-            List<Question> questionList = teacherService.findByExamName(exam_name);
-            System.out.println(questionList.size());
-            stringListHashMap.put(exam_name, questionList);
-        }
-        request.setAttribute("stringListHashMap", stringListHashMap);
-        System.out.println(paperList.size());
-        System.out.println(stringListHashMap.size());
+        String account = (String) request.getSession().getAttribute("name");
+        String major = teacherService.findByAccount(account).getExam_name();
+        List<Question> questionList = teacherService.findByExamName(major);
+        request.setAttribute("questionList",questionList);
+        request.setAttribute("exam_name",major);
         return "questionManage";
     }
 
@@ -80,8 +75,9 @@ public class TeacherController {
 
     @RequestMapping("/delPaper")
     public String delPaper(HttpServletRequest request, HttpServletResponse response) {
-        Integer index = Integer.valueOf(request.getParameter("delete"));
-        List<Paper> paperList = (List<Paper>) request.getAttribute("paperList");
+        int index = Integer.parseInt(request.getParameter("delete"));
+        List<Paper> paperList = paperService.findAllPaper();
+        System.out.println(paperList.toString());
         paperService.delPaper(paperList.get(index).getPaperID());
         return "../success";
     }
@@ -132,17 +128,44 @@ public class TeacherController {
         Teacher old_teacher = teacherService.findByAccount((String) request.getSession().getAttribute("name"));
         String new_password = request.getParameter("new_password");
         String new_name = request.getParameter("new_name");
-        Integer gender = request.getParameter("gender").equals("男") ? 1:2;
+        Integer gender = request.getParameter("gender").equals("男") ? 1 : 2;
         String new_mail = request.getParameter("new_mail");
-        String new_exam_name=request.getParameter("new_exam_name");
+        String new_exam_name = request.getParameter("new_exam_name");
         Teacher teacher = new Teacher(old_teacher.getTeacherID(),
-                new_account==null? old_teacher.getAccount():new_account,
-                new_password == null?old_teacher.getPassword():new_password,
-                new_name ==new_exam_name ? old_teacher.getName():new_name,
+                new_account == null ? old_teacher.getAccount() : new_account,
+                new_password == null ? old_teacher.getPassword() : new_password,
+                new_name == new_exam_name ? old_teacher.getName() : new_name,
                 gender,
-                new_mail == null? old_teacher.getMail() :new_mail,
-                new_exam_name == new_name ?old_teacher.getExam_name():new_exam_name);
+                new_mail == null ? old_teacher.getMail() : new_mail,
+                new_exam_name == new_name ? old_teacher.getExam_name() : new_exam_name);
         teacherService.updateTeacher(teacher);
+        return "../success";
+    }
+
+
+    @RequestMapping("/getAllStu")
+    public String getAllStu(HttpServletRequest request, HttpServletResponse response) {
+        List<Student> studentList = teacherService.findAllStudent();
+        request.setAttribute("studentList",studentList);
+        return "studentInfo";
+    }
+
+
+    @RequestMapping("/addQuestion")
+    public String addQuestion(HttpServletRequest request,HttpServletResponse response) {
+        Integer questionID = Integer.valueOf(request.getParameter("questionID"));
+        String question = request.getParameter("question");
+        String answer = request.getParameter("answer");
+        String option_a = request.getParameter("option_a");
+        String option_b = request.getParameter("option_b");
+        String option_c = request.getParameter("option_c");
+        String option_d = request.getParameter("option_d");
+        String analysis = request.getParameter("analysis");
+        String point = request.getParameter("point");
+        String difficulty = request.getParameter("difficulty");
+        Teacher teacher = teacherService.findByAccount((String) request.getSession().getAttribute("name"));
+        Question question1 = new Question(null, questionID, question, answer,option_a,option_b,option_c,option_d,analysis,point,difficulty,teacher.getExam_name());
+        teacherService.insertQuestion(question1);
         return "../success";
     }
 

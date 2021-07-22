@@ -16,8 +16,8 @@ public interface TeacherDao {
     @Select("select * from student")
     public List<Student> findAllStudent();
 
-    @Update("update teacher set teacherID=#{teacherID},account=#{account},password=#{password},name=#{name}," +
-            "gender=#{gender},mail=#{mail},exam_name=#{exam_name} where account=#{account)")
+    @Update("update teacher set account=#{account},password=#{password},name=#{name}," +
+            "gender=#{gender},mail=#{mail},exam_name=#{exam_name} where teacherID=#{teacherID}")
     public boolean updateTeacher(Teacher teacher);
 
     @Select("select * from teacher where account=#{account}")

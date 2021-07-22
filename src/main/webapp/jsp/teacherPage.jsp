@@ -87,7 +87,7 @@
             </form>
         </li>
         <li>
-            <form action="" method="post">
+            <form action="${pageContext.request.contextPath}/PaperService/getAllStu" method="post">
                 <input type="submit" value="考生信息">
             </form>
         </li>
