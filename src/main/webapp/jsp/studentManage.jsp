@@ -38,6 +38,7 @@
     <input type="text" placeholder="输入账号或编号查询学生信息">
 </div>
 <table>
+    <form method="post" action="${pageContext.request.contextPath}/admin/delStu">
     <tr class="thead">
         <td>学生学号</td>
         <td>学生账号</td>
@@ -55,9 +56,10 @@
             <td>${item.name}</td>
             <td>${item.gender}</td>
             <td>${item.grade}</td>
-            <td><input class="del" type="submit" name="delete" value="${status.index}"></td>
+            <td><input class="del" type="submit" name="index" value="${status.index}"></td>
         </tr>
     </c:forEach>
+    </form>
 </table>
 
 </body>

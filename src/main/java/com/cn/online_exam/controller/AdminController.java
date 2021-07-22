@@ -54,16 +54,9 @@ public class AdminController {
     public String update(HttpServletRequest request, HttpServletResponse response) {
         String new_name = request.getParameter("new_name");
         String new_password = request.getParameter("new_password");
-        System.out.println(new_password == null);
-        System.out.println(new_name == null);
-        Integer ID = adminService.findAdmin((String) request.getSession().getAttribute("name")).getAdminID();
-        System.out.println(ID);
-        Administrator administrator = null;
-        if (!new_password.equals("")) {
-            administrator = new Administrator(null, new_name, new_password);
-        } else {
-            administrator = new Administrator(null,new_name, (String) request.getSession().getAttribute("password"));
-        }
+        Administrator old_admin = adminService.findAdmin((String) request.getSession().getAttribute("name"));
+        Administrator administrator = new Administrator(old_admin.getAdminID() ,
+                new_name ==null ? old_admin.getAccount():new_name, new_password == null?old_admin.getPassword():new_password);
         System.out.println(administrator.toString());
         adminService.updateAdmin(administrator);
         return "../success";

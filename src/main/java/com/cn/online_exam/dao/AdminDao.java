@@ -48,30 +48,28 @@ public interface AdminDao {
     /**
      * 实现各个表的删除功能。
      * @param account 账号名
-     * @return 结果。
      */
     @Delete("delete from admin where account=#{account}")
-    public boolean delAdmin(String account);
+    public void delAdmin(String account);
 
     @Delete("delete from teacher where account=#{account}")
-    public boolean delTeacher(String account);
+    public void delTeacher(String account);
 
     @Delete("delete from student where account=#{account}")
-    public boolean delStudent(String account);
+    public void delStudent(String account);
 
 
     /**
      * 更新自己的信息。
      * @param administrator 即将更新的信息。
      */
-    @Update("update admin set adminID=#{adminID}, account=#{account}, password=#{password}")
-    public boolean updateAdmin(Administrator administrator);
+    @Update("update admin set account=#{account}, password=#{password} where adminID=#{adminID}")
+    public void updateAdmin(Administrator administrator);
 
     /**
      * 更新。
      * @param administrator 即将更新的信息。
-     * @return 返回是否成功。
      */
     @Insert("insert into admin(adminID, account, password) values(#{adminID}, #{account}, #{password})")
-    public boolean addAdmin(Administrator administrator);
+    public void addAdmin(Administrator administrator);
 }

@@ -26,6 +26,7 @@
 </head>
 <body>
 <!-- 侧边栏 -->
+<%--侧边栏--%>
 <div id="sidebar">
     <img src="../statics/img/image/logo.png" />
     <ul>
@@ -58,7 +59,7 @@
             </form>
         </li>
         <li>
-            <form action="" method="post">
+            <form action="${pageContext.request.contextPath}/PaperService/getAllStu" method="post">
                 <input type="submit" value="考生信息">
             </form>
         </li>
@@ -74,41 +75,34 @@
 </div>
 
 
+
 <!-- 版心 -->
 <div id="container">
     <div id="logout">退出登录</div>
     <!-- 题库管理 -->
     <div id="ques-manage">
         <div class="ques-manage-bar">
-            <p>科目选择</p>
-               <c:forEach items="${requestScope.paperList}" var="item" varStatus="status">
-                   <input type="radio" name="major" value="${item.exam_name}" ><label>${item.exam_name}</label>
-               </c:forEach>
-            <input type="button" name="add-ques" id="add-ques" value="添加题目" />
+            <p>科目</p>
+            <label>${requestScope.exam_name}</label>
+            <div><input type="button" onclick=window.open('http://localhost:8080/onlineExam_war_exploded/jsp/addQuestion.jsp') name="add-ques" id="add-ques" value="添加题目"></div>
         </div>
-        <div class="ques-manage-main">
-            <ol>
-                <c:forEach items="${requestScope.stringListHashMap}" var="map" >
-                    <c:when test="${map.key eq 'JAVA-developing'}">
-                        <c:forEach items="${map}" var="item">
-                            <li>${item.toString()}</li>
-                        </c:forEach>
-                    </c:when>
-                    
-                </c:forEach>
-            </ol>
-
-            <ul>
-                <li>
-                    <span>题目1</span>
-                    <input type="button" name="update-ques" id="update-ques" value="修改" />
-                </li>
-                <li>
-                    <span>题目2</span>
-                    <input type="button" name="update-ques" id="update-ques" value="修改" />
-                </li>
-            </ul>
-        </div>
+<%--        <form>--%>
+            <div class="ques-manage-main">
+                <ol>
+                    <c:forEach items="${requestScope.questionList}" var="item">
+                        <li>${item.questionID}.${item.question}</li>
+                        <ol>
+                            <li>${item.option_a}</li>
+                            <li>${item.option_b}</li>
+                            <li>${item.option_c}</li>
+                            <li>${item.option_d}</li>
+                            <li>答案：${item.answer}</li>
+                            <li><input type="button" name="update-ques" id="update-ques" value="修改" /></li>
+                        </ol>
+                    </c:forEach>
+                </ol>
+            </div>
+<%--        </form>--%>
     </div>
 </div>
 </body>
