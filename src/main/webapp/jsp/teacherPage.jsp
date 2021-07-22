@@ -70,16 +70,24 @@
             </form>
         </li>
         <li>
-            <a href="${pageContext.request.contextPath}/jsp/examList.jsp" >考试列表</a>
+            <form action="${pageContext.request.contextPath}/PaperService/getAllPaper" method="post">
+                <input type="submit" value="考试列表">
+            </form>
         </li>
         <li>
-            <h1><span class="iconfont icon-shuju"></span>数据统计</h1>
+            <form action="" method="post">
+                <input type="submit" value="数据统计">
+            </form>
         </li>
         <li>
-            <a href="" >考试记录</a>
+            <form action="${pageContext.request.contextPath}/PaperService/examResult" method="post">
+                <input type="submit" value="考试记录">
+            </form>
         </li>
         <li>
-            <a href="${pageContext.request.contextPath}/jsp/studentInfo.jsp" >考生信息</a>
+            <form action="" method="post">
+                <input type="submit" value="考生信息">
+            </form>
         </li>
         <li>
             <h1><span class="iconfont icon-yonghu"></span>个人中心</h1>

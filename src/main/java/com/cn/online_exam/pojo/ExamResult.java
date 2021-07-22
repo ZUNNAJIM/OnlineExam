@@ -11,6 +11,11 @@ public class ExamResult implements Serializable {
     private Date date;
     private Integer result;
 
+    public ExamResult()
+    {
+        super();
+    }
+
     public ExamResult(Integer resultID, Integer studentID, Integer paperID, Date date, Integer result) {
         this.resultID = resultID;
         this.studentID = studentID;

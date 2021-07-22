@@ -32,22 +32,32 @@
             <h1><span class="iconfont icon-ziyuan143"></span>考试管理</h1>
         </li>
         <li>
-            <a href="${pageContext.request.contextPath}/jsp/teacherPage.jsp">创建考试</a>
+            <a href="">创建考试</a>
         </li>
         <li>
-            <a href="${pageContext.request.contextPath}/jsp/questionManage.jsp">题库管理</a>
+            <form method="post" action="${pageContext.request.contextPath}/PaperService/manageQuestion" >
+                <input type="submit" value="题库管理">
+            </form>
         </li>
         <li>
-            <a href="${pageContext.request.contextPath}/jsp/examList.jsp" >考试列表</a>
+            <form action="${pageContext.request.contextPath}/PaperService/getAllPaper" method="post">
+                <input type="submit" value="考试列表">
+            </form>
         </li>
         <li>
-            <h1><span class="iconfont icon-shuju"></span>数据统计</h1>
+            <form action="" method="post">
+                <input type="submit" value="数据统计">
+            </form>
         </li>
         <li>
-            <a href="" >考试记录</a>
+            <form action="" method="post">
+                <input type="submit" value="考试记录">
+            </form>
         </li>
         <li>
-            <a href="${pageContext.request.contextPath}/jsp/studentInfo.jsp" >考生信息</a>
+            <form action="" method="post">
+                <input type="submit" value="考生信息">
+            </form>
         </li>
         <li>
             <h1><span class="iconfont icon-yonghu"></span>个人中心</h1>
@@ -57,6 +67,7 @@
         </li>
     </ul>
 </div>
+
 
 <!-- 版心 -->
 <div id="container">

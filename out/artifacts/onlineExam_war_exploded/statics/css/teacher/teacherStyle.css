@@ -59,6 +59,9 @@ h1 {
 	top: 20px;
 	right: 30px;
 }
+#logout a{
+	text-direction: none;
+}
 #logout:hover {
 	color: #00aef8;
 	cursor: pointer;

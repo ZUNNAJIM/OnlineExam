@@ -1,5 +1,6 @@
 package com.cn.online_exam.controller;
 
+import com.cn.online_exam.pojo.ExamResult;
 import com.cn.online_exam.pojo.Paper;
 import com.cn.online_exam.pojo.Question;
 import com.cn.online_exam.service.PaperService;
@@ -66,6 +67,28 @@ public class TeacherController {
         System.out.println(paperList.size());
         System.out.println(stringListHashMap.size());
         return "questionManage";
+    }
+
+    @RequestMapping("/getAllPaper")
+    public String getAllPaper(HttpServletRequest request, HttpServletResponse response) {
+        List<Paper> paperList = paperService.findAllPaper();
+        request.setAttribute("paperList", paperList);
+        return "examList";
+    }
+
+    @RequestMapping("/delPaper")
+    public String delPaper(HttpServletRequest request, HttpServletResponse response) {
+        Integer index = Integer.valueOf(request.getParameter("delete"));
+        List<Paper> paperList = (List<Paper>) request.getAttribute("paperList");
+        paperService.delPaper(paperList.get(index).getPaperID());
+        return "../success";
+    }
+
+    @RequestMapping("/examResult")
+    public String getExamResult(HttpServletRequest request, HttpServletResponse response) {
+        List<ExamResult> examResults = paperService.findAllResult();
+        request.setAttribute("examResults", examResults);
+        return "examNotes";
     }
 
 

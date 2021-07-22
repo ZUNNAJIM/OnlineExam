@@ -51,7 +51,7 @@
 				<input type="password" id="adminPwd" name="password1" placeholder="请输入密码" />
 			</p>
 			<p>
-				<label>确认密码：</label>
+				<label>确&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;认：</label>
 				<input type="password" id="adminPwd-repeat" name="password2" placeholder="再次输入密码" />
 			</p>
 			<p>
